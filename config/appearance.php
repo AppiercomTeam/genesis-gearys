@@ -8,10 +8,10 @@
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-$genesass_default_colors = array(
-	'link'   => '#036966', // skobeloff.
-	'accent' => '#00b5b0', // tiffany blue.
-);
+$genesis_sample_default_colors = [
+	'link'   => '#367c2b', // green.
+	'accent' => '#fdda01', // yellow.
+];
 
 $genesass_link_color = get_theme_mod(
 	'genesass_link_color',
@@ -36,24 +36,59 @@ return array(
 	'default-colors'       => $genesass_default_colors,
 	'editor-color-palette' => array(
 		array(
-			'name'  => __( 'Primary color', 'genesass' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
+			'name'  => __( 'John Deere Green', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
-			'color' => $genesass_link_color,
+			'color' => $genesis_sample_link_color,
 		),
 		array(
-			'name'  => __( 'Accent color', 'genesass' ),
+			'name'  => __( 'John Deere Yellow', 'genesis-sample' ),
 			'slug'  => 'theme-secondary',
-			'color' => $genesass_accent_color,
+			'color' => $genesis_sample_accent_color,
 		),
 		array(
-			'name'  => __( 'White', 'genesass' ),
-			'slug'  => 'theme-white',
-			'color' => '#ffffff',
+			'name'  => __( 'Black Chocolate', 'genesis-sample' ),
+			'slug'  => 'jd-black',
+			'color' => '#27251F',
 		),
 		array(
-			'name'  => __( 'Black', 'genesass' ),
-			'slug'  => 'theme-black',
+			'name'  => __( 'Forest Green', 'genesis-sample' ),
+			'slug'  => 'jd-forest-green',
+			'color' => '#22491d',
+		),
+		array(
+			'name'  => __( 'Morning Blue', 'genesis-sample' ),
+			'slug'  => 'jd-morning-blue',
+			'color' => '#909992',
+		),
+		array(
+			'name'  => __( 'Rifle Green', 'genesis-sample' ),
+			'slug'  => 'jd-rifle-green',
+			'color' => '#484E41',
+		),
+		array(
+			'name'  => __( 'Olive Green', 'genesis-sample' ),
+			'slug'  => 'jd-olive-green',
+			'color' => '#A59B55',
+		),
+		array(
+			'name'  => __( 'Black', 'genesis-sample' ),
+			'slug'  => 'black',
 			'color' => '#000000',
+		),
+		array(
+			'name'  => __( 'Medium Grey', 'genesis-sample' ),
+			'slug'  => 'jd-medium-grey',
+			'color' => '#333333',
+		),
+		array(
+			'name'  => __( 'Light Grey', 'genesis-sample' ),
+			'slug'  => 'jd-light-grey',
+			'color' => '#666666',
+		),
+		array(
+			'name'  => __( 'White', 'genesis-sample' ),
+			'slug'  => 'white',
+			'color' => '#ffffff',
 		),
 	),
 	'editor-font-sizes'    => array(

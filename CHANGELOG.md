@@ -1,5 +1,13 @@
 # Genesass Theme Changelog
 
+## [0.0.2] - 2022-02-07
+### Added
+- added additional theme colours to SCSS variables, editor colour palette
+
+### Changed
+- changed default (primary and secondary) colours to John Deere green and yellow.
+### Removed
+
 ## [0.0.1] - 2022-01-06
 
 ### Added
