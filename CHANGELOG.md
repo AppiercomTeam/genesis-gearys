@@ -6,6 +6,8 @@
 
 ### Changed
 - changed default (primary and secondary) colours to John Deere green and yellow.
+- replaced default fonts with Raleway and Amatic SC (headings)
+
 ### Removed
 
 ## [0.0.1] - 2022-01-06

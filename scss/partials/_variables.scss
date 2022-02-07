@@ -64,7 +64,7 @@ $danger: #D50000; // material design -red-A700
 // Typography
 // ---------------------------------------------------------------------------
 // Base Fonts
-$base-font: 'Montserrat',
+$base-font: 'Raleway',
 -apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
@@ -78,7 +78,44 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji";
 
-$heading-font: $base-font;
+$heading-font: 'Amatic SC',
+'Raleway',
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+// Headings
+$headings--font-family: $heading-font;
+
+$h1--font-size: 3rem; // title for page, single, archive, search, the 404
+$h2--font-size: 2.5rem; // skip links, main navigation, sidebars (and in the content)
+$h3--font-size: 2.0rem; // widget-titles (and in the content)
+$h4--font-size: 1.6rem; // only in the content
+$h5--font-size: 1.4rem; // only in the content
+$h6--font-size: 1.2rem; // only in the content
+
+$font-size-small: 0.875rem; // 14px
+$font-size-large: 1.125rem; // 18px
+$font-size-huge: 2rem; // 32px
+
+// Line heights
+$line-height--big: 2;
+$line-height--large: 1.75;
+$line-height--normal: 1.625;
+$line-height--medium: 1.5;
+$line-height--medium-small: 1.4;
+$line-height--small: 1.2;
+$line-height--smaller: 1;
+
 
 // Screen widths, Media queries - WC widths in WC variables
 $standard-screen-width: 960px;
@@ -91,21 +128,6 @@ $border-color: $gray-200;
 // Box Shadow
 $box-shadow-blur-radius: 20px;
 $box-shadow-opacity: 0.05;
-
-// Font sizes
-$body--font-size: 16px;
-$h1--font-size: 3rem; // title for page, single, archive, search, the 404
-$h2--font-size: 2.7rem; // skip links, main navigation, sidebars (and in the content)
-$h3--font-size: 2.3rem; // widget-titles (and in the content)
-$h4--font-size: 2rem; // only in the content
-$h5--font-size: 1.8rem; // only in the content
-$h6--font-size: 1.6rem; // only in the content
-
-$font-size-small: 0.9rem;
-$font-size-regular: 1rem;
-$font-size-large: 1.6rem;
-$font-size-huge: 3rem;
-
 
 $after-entry__breadcrumb--font-size: 1.6rem;
 $archive-author-box__entry-title--font-size: 2rem;
@@ -132,14 +154,7 @@ $widget-title--font-size: 1.4rem;
 $body--font-family: $base-font;
 $headings--font-family: $heading-font;
 
-// Line heights
-$line-height--big: 2;
-$line-height--large: 1.75;
-$line-height--normal: 1.625;
-$line-height--medium: 1.5;
-$line-height--medium-small: 1.4;
-$line-height--small: 1.2;
-$line-height--smaller: 1;
+
 
 // Font colors
 $archive-pagination--font-color-hover: $white;
