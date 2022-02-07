@@ -1,7 +1,7 @@
 {
 	"name": "gillespieza/genesass",
 	"type": "wordpress-theme",
-	"description": "Genesass child theme for the Genesis Framework",
+	"description": "GenesassGenuflex child theme for the Genesis Framework",
 	"homepage": "https://github.com/gillespieza/genesass-and-genuflex",
 	"license": "GPL-2.0-or-later",
 	"authors": [
@@ -20,13 +20,17 @@
 	},
 	"require-dev": {
 		"php": "^5.6 || ^7",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-		"phpcompatibility/phpcompatibility-wp": "^2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+		"phpcompatibility/phpcompatibility-wp": "*",
 		"squizlabs/php_codesniffer": "^3.3.2",
-		"wp-coding-standards/wpcs": "^1.1"
+		"wp-coding-standards/wpcs": "^2.3"
 	},
 	"config": {
-		"sort-order": true
+		"sort-order": true,
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	},
 	"scripts": {
 		"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
