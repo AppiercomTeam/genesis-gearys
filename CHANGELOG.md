@@ -7,9 +7,13 @@
 
 ### Changed
 - update theme name and package name from Genesis Sample to Genesass
-- changed default colours to Skobeloff and Tiffany Blue
-- changed editor font sizes from 12px to 14px, and from 18px to 16px
+- changed default (primary and secondary) colours to Skobeloff and Tiffany Blue
+- added an additional editor font size and changed the "small" font size from 12px to 14px
 - use "Primary Colour" instead of "Custom Colour" in color palette names
+- added rems and 404 pages to the Accessibility theme supports
 
 ### Removed
 - contributing guidelines - I'm not ready to collaborate yet
+
+
+
