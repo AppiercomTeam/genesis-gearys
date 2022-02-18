@@ -13,7 +13,7 @@
 			margin-top: ($spacer * 2);
 		}
 
-		@media only screen and (min-width: 960px) {
+		@media only screen and (min-width: $width-lg) {
 			padding-left: ($spacer * 3);
 			padding-right: ($spacer * 3);
 		}

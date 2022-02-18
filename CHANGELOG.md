@@ -2,13 +2,20 @@
 
 ## [0.0.3] - 2022-02-18
 ### Added
+- SCSS
+-- breakpoint variables
+-- reorganised variables file
+
 ### Changed
 - SCSS
 -- changed `mark` highlighting
 -- renamed _resets.scss to _normalize.scss
-
+-- changed all media queries to use breakpoint variables
+-- renamedfont-family-regular to font-family--normal
 
 ### Removed
+- SCSS
+-- superfluous font family variables
 
 ## [0.0.2] - 2022-02-07
 ### Added

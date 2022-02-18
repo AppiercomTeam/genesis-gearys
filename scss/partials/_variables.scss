@@ -60,10 +60,63 @@ $warning: $yellow;
 $danger: #D50000; // material design -red-A700
 
 
+// Font colors
+$archive-pagination--font-color-hover: $white;
+$archive-pagination--font-color: $gray-800;
+$button--font-color-hover: $black;
+$button--font-color: $white;
+$disabled--font-color: $gray-600;
+$disabled--font-color-hover: $gray-500;
+$entry-title__link--font-color-hover: $primary;
+$entry-title__link--font-color: $gray-800;
+$forms--font-color: $gray-800;
+$genesis-nav-menu--font-color-hover: $gray-400;
+$genesis-nav-menu--font-color: $gray-800;
+$gs-faq__question--font-color-hover: $primary;
+$gs-faq__question--font-color: $gray-800;
+$input--font-color: $gray-900;
+$link--font-color-hover: $secondary;
+$link--font-color: $primary;
+$menu-highlight__link--font-color: $white;
+$menu-toggle--font-color-hover: $primary;
+$menu-toggle--font-color: $gray-800;
+$sidebar__widget-title--font-color: $gray-800;
+$site-title__link--font-color: $gray-800;
+$sub-menu-toggle--font-color-hover: $primary;
+$sub-menu-toggle--font-color: $gray-800;
 
-// Typography
+// Background colors
+$archive-pagination--background-color-hover: $gray-800;
+$archive-pagination--background-color: $gray-100;
+$author-box--background-color: $gray-100;
+$button--background-color-hover: $primary;
+$button--background-color: $secondary;
+$code--background-color: $gray-100;
+$disabled--background-color: $gray-200;
+$disabled--background-color-hover: $gray-100;
+$enews__sidebar--background-color: $gray-100;
+$footer-widgets--background-color: $white;
+$forms__background-color: $white;
+$genesis-nav-menu__sub-menu__link--background-color: $white;
+$genesis-nav-menu--background-color-hover: $gray-400;
+$genesis-nav-menu--background-color: $gray-800;
+$genesis-nav-menu__highlight-link--background-color: $gray-800;
+$genesis-nav-menu__highlight-link--background-color-hover: $primary;
+$input__background-color: $white;
+$mark--background-color: $primary;
+$menu-highlight__link--background-color-hover: $blue;
+$menu-highlight__link--background-color: $gray-800;
+$site-footer--background-color: $white;
+$site-header--background-color: $white;
+$sticky--background-color: $gray-100;
+
+
+// ----------------------------------------------------------------------------
+// TYPOGRAPHY
+// ----------------------------------------------------------------------------
+
+// Font Families
 // ---------------------------------------------------------------------------
-// Base Fonts
 $base-font: 'Raleway',
 -apple-system,
 BlinkMacSystemFont,
@@ -93,9 +146,16 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji";
 
-// Headings
-$headings--font-family: $heading-font;
+// Font Sizes
+// ---------------------------------------------------------------------------
+$font-size-small: 0.875rem; // 14px
+$font-size--normal: 1rem; // 16px
+$font-size-large: 1.125rem; // 18px
+$font-size-huge: 2rem; // 32px
 
+
+// Headings
+// ---------------------------------------------------------------------------
 $h1--font-size: 3rem; // title for page, single, archive, search, the 404
 $h2--font-size: 2.5rem; // skip links, main navigation, sidebars (and in the content)
 $h3--font-size: 2.0rem; // widget-titles (and in the content)
@@ -103,11 +163,9 @@ $h4--font-size: 1.6rem; // only in the content
 $h5--font-size: 1.4rem; // only in the content
 $h6--font-size: 1.2rem; // only in the content
 
-$font-size-small: 0.875rem; // 14px
-$font-size-large: 1.125rem; // 18px
-$font-size-huge: 2rem; // 32px
 
 // Line heights
+// ---------------------------------------------------------------------------
 $line-height--big: 2;
 $line-height--large: 1.75;
 $line-height--normal: 1.625;
@@ -116,9 +174,19 @@ $line-height--medium-small: 1.4;
 $line-height--small: 1.2;
 $line-height--smaller: 1;
 
+// ----------------------------------------------------------------------------
+// BREAKPOINTS
+// ----------------------------------------------------------------------------
+$width-xs: 360px;
+$width-sm: 576px;
+$width-md: 768px;
+$width-lg: 992px;
+$width-xl: 1200px;
 
-// Screen widths, Media queries - WC widths in WC variables
-$standard-screen-width: 960px;
+
+
+
+
 
 // Border styles
 $border-width: 1px;
@@ -131,82 +199,30 @@ $box-shadow-opacity: 0.05;
 
 $after-entry__breadcrumb--font-size: 1.6rem;
 $archive-author-box__entry-title--font-size: 2rem;
-$archive-pagination--font-size: $font-size-regular;
+$archive-pagination--font-size: $font-size--normal;
 $blockquote__before--font-size: 3rem; // not used
 $breadcrumb--font-size: $font-size-small;
 $button--font-size: 18px;
-$comments--font-size: $font-size-regular; // not used?
+$comments--font-size: $font-size--normal; // not used?
 $enews-widget__input--font-size: 1.6rem;
 $entry-content__caption--font-size: 1.4rem;
 $entry-meta--font-size: 1.6rem;
 $entry-title--font-size: 2.7rem;
 $featured-content__entry-title--font-size: 1.6rem;
 $footer-widgets--font-size: $font-size-small; // not used?
-$forms--font-size: $font-size-regular;
+$forms--font-size: $font-size--normal;
 $genesis-nav-menu__sub-menu__link--font-size: $font-size-small;
-$genesis-nav-menu--font-size: $font-size-regular;
-$sidebar--font-size: $font-size-regular;
+$genesis-nav-menu--font-size: $font-size--normal;
+$sidebar--font-size: $font-size--normal;
 $site-footer--font-size: 1.5rem;
 $site-title--font-size: 2rem;
 $widget-title--font-size: 1.4rem;
 
-// Font families
-$body--font-family: $base-font;
-$headings--font-family: $heading-font;
 
 
 
-// Font colors
-$archive-pagination--font-color-hover: $white;
-$archive-pagination--font-color: $gray-800;
-$body--font-color: $gray-900;
-$button--font-color-hover: $black;
-$button--font-color: $white;
-$disabled--font-color: $gray-600;
-$disabled--font-color-hover: $gray-500;
-$entry-title__link--font-color-hover: $primary;
-$entry-title__link--font-color: $gray-800;
-$forms--font-color: $gray-800;
-$genesis-nav-menu--font-color-hover: $gray-400;
-$genesis-nav-menu--font-color: $gray-800;
-$gs-faq__question--font-color-hover: $primary;
-$gs-faq__question--font-color: $gray-800;
-$input--font-color: $gray-900;
-$link--font-color-hover: $secondary;
-$link--font-color: $primary;
-$menu-highlight__link--font-color: $white;
-$menu-toggle--font-color-hover: $primary;
-$menu-toggle--font-color: $gray-800;
-$sidebar__widget-title--font-color: $gray-800;
-$site-title__link--font-color: $gray-800;
-$sub-menu-toggle--font-color-hover: $primary;
-$sub-menu-toggle--font-color: $gray-800;
 
-// Background colors
-$archive-pagination--background-color-hover: $gray-800;
-$archive-pagination--background-color: $gray-100;
-$author-box--background-color: $gray-100;
-$body--background-color: $gray-100;
-$button--background-color-hover: $primary;
-$button--background-color: $secondary;
-$code--background-color: $gray-100;
-$disabled--background-color: $gray-200;
-$disabled--background-color-hover: $gray-100;
-$enews__sidebar--background-color: $gray-100;
-$footer-widgets--background-color: $white;
-$forms__background-color: $white;
-$genesis-nav-menu__sub-menu__link--background-color: $white;
-$genesis-nav-menu--background-color-hover: $gray-400;
-$genesis-nav-menu--background-color: $gray-800;
-$genesis-nav-menu__highlight-link--background-color: $gray-800;
-$genesis-nav-menu__highlight-link--background-color-hover: $primary;
-$input__background-color: $white;
-$mark--background-color: $primary;
-$menu-highlight__link--background-color-hover: $blue;
-$menu-highlight__link--background-color: $gray-800;
-$site-footer--background-color: $white;
-$site-header--background-color: $white;
-$sticky--background-color: $gray-100;
+
 
 $spacer: 10px;
 

@@ -11,7 +11,7 @@
 		float: none;
 		position: relative;
 
-		@media only screen and (min-width: 960px) {
+		@media only screen and (min-width: $width-lg) {
 			display: inline-block;
 		}
 
@@ -64,7 +64,7 @@
 		width: 100%;
 		z-index: 99;
 
-		@media only screen and (min-width: 960px) {
+		@media only screen and (min-width: $width-lg) {
 			border-top: $border-width $border-style $border-color;
 			opacity: 0;
 			padding-left: 0;
@@ -95,7 +95,7 @@
 			word-wrap: break-word;
 			width: 100%;
 
-			@media only screen and (min-width: 960px) {
+			@media only screen and (min-width: $width-lg) {
 				border-top: 0;
 				border: $border-width $border-style $border-color;
 				padding-bottom: ($spacer * 1.5);
@@ -137,7 +137,7 @@
 		display: none;
 		position: relative;
 
-		@media only screen and (min-width: 960px) {
+		@media only screen and (min-width: $width-lg) {
 			display: block;
 			padding-top: ($spacer * 1.5);
 		}
@@ -187,7 +187,7 @@
 		color: $menu-toggle--font-color-hover;
 	}
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		display: none;
 		visibility: hidden;
 	}
@@ -227,7 +227,7 @@
 		}
 	}
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		display: none;
 		visibility: hidden;
 	}
@@ -262,7 +262,7 @@
 	padding-top: ($spacer * 1.5);
 	width: 100%;
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		clear: none;
 		float: right;
 		width: auto;

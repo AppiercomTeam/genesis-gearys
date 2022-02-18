@@ -73,13 +73,13 @@ body {
 }
 
 .site-inner {
-   @media only screen and (min-width: $standard-screen-width) {
+   @media only screen and (min-width: $width-lg) {
       padding: 70px 0 0 0;
       max-width: none;
    }
 
    .content {
-      @media only screen and (min-width: $standard-screen-width) {
+      @media only screen and (min-width: $width-lg) {
          width: 100%;
 
          .blog &,

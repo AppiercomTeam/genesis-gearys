@@ -31,7 +31,7 @@
 .author-box {
 	margin-bottom: ($spacer * 4);
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		background-color: $author-box--background-color;
 		padding: ($spacer * 3);
 	}
@@ -42,7 +42,7 @@
 	margin-bottom: ($spacer * 4);
 	padding: ($spacer * 2) ($spacer * 3);
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		padding: ($spacer * 4) ($spacer * 6);
 	}
 

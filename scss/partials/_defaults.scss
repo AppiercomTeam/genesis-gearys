@@ -10,10 +10,10 @@ html {
 }
 
 body {
-	background-color: $body--background-color;
-	color: $body--font-color;
-	font-family: $body--font-family;
-	font-size: $body--font-size;
+	background-color: $gray-100;
+	color: $gray-900;
+	font-family: $base-font;
+	font-size: $font-size--normal;
 	font-weight: 400;
 	line-height: $line-height--normal;
 	margin: 0;
@@ -115,10 +115,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $headings--font-family;
+	font-family: $heading-font;
 	font-weight: 700;
 	line-height: $line-height--small;
 	margin: 0 0 ($spacer * 2);
+	text-transform: uppercase;
 }
 
 h1 {
@@ -345,7 +346,7 @@ table {
 	width: 100%;
 	word-break: break-all;
 
-	@media only screen and (min-width: 480px) {
+	@media only screen and (min-width: $width-sm) {
 		table-layout: auto;
 		word-break: normal;
 	}

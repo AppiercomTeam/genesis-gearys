@@ -328,8 +328,8 @@ html {
 body {
   background-color: #f5f5f5;
   color: #212121;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.625;
   margin: 0;
@@ -363,14 +363,14 @@ textarea:focus {
 }
 
 a {
-  color: #036966;
+  color: #367c2b;
   text-decoration: underline;
   -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus, a:hover {
-  color: #00B5B0;
+  color: #FDDA01;
   text-decoration: none;
 }
 
@@ -412,7 +412,7 @@ i {
 }
 
 mark {
-  background: #036966;
+  background: #367c2b;
   color: #fff;
 }
 
@@ -428,10 +428,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Amatic SC", "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 20px;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -439,15 +440,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .entry-content h3,
@@ -460,11 +461,11 @@ h4 {
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 /* Objects
@@ -611,7 +612,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #00B5B0;
+  background-color: #FDDA01;
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -635,7 +636,7 @@ input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
 .button:hover {
-  background-color: #036966;
+  background-color: #367c2b;
   color: #000;
 }
 
@@ -669,7 +670,7 @@ table {
   word-break: break-all;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 576px) {
   table {
     table-layout: auto;
     word-break: normal;
@@ -775,7 +776,7 @@ th {
   padding: 60px 30px 0;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .site-inner {
     max-width: 1140px;
   }
@@ -810,7 +811,7 @@ th {
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .archive-description,
   .author-box {
     background-color: #f5f5f5;
@@ -825,7 +826,7 @@ th {
   padding: 20px 30px;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .after-entry {
     padding: 40px 60px;
   }
@@ -837,7 +838,7 @@ th {
 
 .breadcrumb {
   border-bottom: 1px solid #eeeeee;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   margin-bottom: 40px;
   padding-bottom: 10px;
 }
@@ -921,7 +922,7 @@ th {
 }
 
 .entry-title a:focus, .entry-title a:hover {
-  color: #036966;
+  color: #367c2b;
 }
 
 .widget-title {
@@ -986,7 +987,7 @@ img.alignright,
 figcaption,
 .gallery-caption,
 .wp-caption-text {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -1079,7 +1080,7 @@ figcaption,
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .after-entry .enews {
     padding-left: 30px;
     padding-right: 30px;
@@ -1117,7 +1118,7 @@ figcaption,
 
 .gs-faq__question:focus, .gs-faq__question:hover {
   background: transparent;
-  color: #036966;
+  color: #367c2b;
 }
 
 .gs-faq__question:after {
@@ -1136,10 +1137,10 @@ figcaption,
   background-color: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  padding: 0 30px;
+  padding: 0;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .site-header {
     position: -webkit-sticky;
     position: sticky;
@@ -1213,7 +1214,7 @@ figcaption,
   position: relative;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .genesis-nav-menu .menu-item {
     display: inline-block;
   }
@@ -1262,7 +1263,7 @@ figcaption,
   z-index: 99;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .genesis-nav-menu .sub-menu {
     border-top: 1px solid #eeeeee;
     opacity: 0;
@@ -1284,13 +1285,13 @@ figcaption,
 
 .genesis-nav-menu .sub-menu a {
   background-color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   position: relative;
   word-wrap: break-word;
   width: 100%;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .genesis-nav-menu .sub-menu a {
     border-top: 0;
     border: 1px solid #eeeeee;
@@ -1321,7 +1322,7 @@ figcaption,
   position: relative;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .js .nav-primary {
     display: block;
     padding-top: 15px;
@@ -1356,10 +1357,10 @@ figcaption,
 }
 
 .menu-toggle:focus, .menu-toggle:hover {
-  color: #036966;
+  color: #367c2b;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .menu-toggle {
     display: none;
     visibility: hidden;
@@ -1384,7 +1385,7 @@ figcaption,
 }
 
 .sub-menu-toggle:focus, .sub-menu-toggle:hover {
-  color: #036966;
+  color: #367c2b;
 }
 
 .sub-menu-toggle:before {
@@ -1403,7 +1404,7 @@ figcaption,
           transform: rotate(180deg);
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .sub-menu-toggle {
     display: none;
     visibility: hidden;
@@ -1432,7 +1433,7 @@ figcaption,
   width: 100%;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .nav-primary {
     clear: none;
     float: right;
@@ -1630,7 +1631,7 @@ p .entry-meta {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .sidebar {
     float: right;
     width: 30%;
@@ -1664,7 +1665,7 @@ p .entry-meta {
   margin-right: auto;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .footer-widgets .wrap {
     max-width: 1140px;
   }
@@ -1680,7 +1681,7 @@ p .entry-meta {
   padding-right: 30px;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .footer-widget-area {
     float: left;
     margin-bottom: 0;
@@ -1709,7 +1710,7 @@ p .entry-meta {
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   /* Site Header
 	--------------------------------------------- */
   .admin-bar .site-header {
@@ -1730,7 +1731,7 @@ p .entry-meta {
     padding-right: 20px;
   }
   .genesis-nav-menu > .menu-highlight > a:focus, .genesis-nav-menu > .menu-highlight > a:hover {
-    background-color: #036966;
+    background-color: #367c2b;
   }
   /* Content
 	--------------------------------------------- */
@@ -2013,11 +2014,11 @@ p .entry-meta {
 }
 
 .text-primary {
-  color: #036966 !important;
+  color: #367c2b !important;
 }
 
 .text-secondary {
-  color: #00B5B0 !important;
+  color: #FDDA01 !important;
 }
 
 .text-success {
@@ -2179,11 +2180,11 @@ p .entry-meta {
 }
 
 .bg-primary {
-  background: #036966;
+  background: #367c2b;
 }
 
 .bg-secondary {
-  background: #00B5B0;
+  background: #FDDA01;
 }
 
 .bg-success {
@@ -2273,20 +2274,21 @@ p .entry-meta {
 /* Misc
  --------------------------------------------------------------------------- */
 ::-moz-selection {
-  background-color: #036966;
+  background-color: #367c2b;
   color: #fff;
 }
 ::selection {
-  background-color: #036966;
+  background-color: #367c2b;
   color: #fff;
 }
 
 mark {
-  background-color: rgba(159, 69, 183, 0.2);
+  background-color: #367c2b;
+  color: #fff;
   padding: 0 3px;
 }
 
-span.required {
+.required {
   color: #D50000;
 }
 
@@ -2386,7 +2388,7 @@ span.required {
 }
 
 .wcag--failed {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-decoration: line-through;
 }
 
@@ -2469,7 +2471,7 @@ body .gform_wrapper .gform_body .gform_fields .gfield.gsection .gsection_title {
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_description {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-style: italic;
   padding-left: 15px;
   padding-top: 0;
@@ -2517,7 +2519,7 @@ body .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=text]:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
@@ -2534,12 +2536,12 @@ body .gform_wrapper .gform_body .gform_fields .gfield select {
 
 body .gform_wrapper .gform_body .gform_fields .gfield select option.gf_placeholder {
   color: #9e9e9e;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-style: italic;
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield select:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
@@ -2554,7 +2556,7 @@ body .gform_wrapper .gform_body .gform_fields .gfield textarea {
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield textarea:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
@@ -2564,13 +2566,13 @@ body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio input[type=r
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio input[type=radio]:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio input[type=radio]:focus ~ label {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
@@ -2584,19 +2586,19 @@ body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox input[typ
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox input[type=checkbox]:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox input[type=checkbox]:focus ~ label {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox button {
-  background-color: #00B5B0;
+  background-color: #FDDA01;
   color: #000;
   font-size: 18px;
   font-weight: 400;
@@ -2649,13 +2651,13 @@ body .gform_wrapper .gform_body .gform_fields .gfield input[type=tel]:focus,
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=number]:focus,
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=password]:focus,
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=url]:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gform_drop_area {
-  border-color: #036966;
+  border-color: #367c2b;
 }
 
 body .gform_wrapper .gform_body .gform_fields .gfield .gform_button_select_files {
@@ -2666,11 +2668,11 @@ body .gform_wrapper .gform_body .gform_fields .gfield .gform_button_select_files
 }
 
 body .gform_wrapper .gform_footer input[type=submit] {
-  background-color: #036966;
+  background-color: #367c2b;
   border-radius: 5px;
   color: #fff;
   float: right;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 18px;
   font-weight: 400;
   padding: 15px 30px;
@@ -2678,7 +2680,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
 }
 
 body .gform_wrapper .gform_footer input[type=submit]:hover {
-  background-color: #00B5B0;
+  background-color: #FDDA01;
   color: #000;
 }
 
@@ -2701,13 +2703,13 @@ body .gform_wrapper .gform_footer br {
 }
 
 .ginput_container_consent input[type=checkbox]:focus {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 .ginput_container_consent input[type=checkbox]:focus ~ label {
-  border-color: #036966;
+  border-color: #367c2b;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }

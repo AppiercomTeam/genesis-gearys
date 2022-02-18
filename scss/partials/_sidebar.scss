@@ -5,7 +5,7 @@
 	font-size: $sidebar--font-size;
 	line-height: $line-height--medium;
 
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: $width-lg) {
 		float: right;
 		width: 30%;
 	}
