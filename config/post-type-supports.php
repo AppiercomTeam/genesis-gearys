@@ -10,11 +10,11 @@
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-return [
-	'post' => [
+return array(
+	'post' => array(
 		'genesis-singular-images',
-	],
-	'page' => [
+	),
+	'page' => array(
 		'genesis-singular-images',
-	],
-];
+	),
+);

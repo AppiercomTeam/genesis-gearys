@@ -13,40 +13,40 @@
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-return [
-	'plugins'          => [
-		[
+return array(
+	'plugins'          => array(
+		array(
 			'name'       => __( 'Genesis Blocks', 'genesass' ),
 			'slug'       => 'genesis-blocks/genesis-blocks.php',
 			'public_url' => 'https://wordpress.org/plugins/genesis-blocks/',
-		],
-		[
+		),
+		array(
 			'name'       => __( 'Simple Social Icons', 'genesass' ),
 			'slug'       => 'simple-social-icons/simple-social-icons.php',
 			'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-		],
-		[
+		),
+		array(
 			'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesass' ),
 			'slug'       => 'genesis-enews-extended/plugin.php',
 			'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
-		],
-		[
+		),
+		array(
 			'name'       => __( 'WPForms Lite (Third Party)', 'genesass' ),
 			'slug'       => 'wpforms-lite/wpforms.php',
 			'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
-		],
-	],
-	'content'          => [
-		'blocks'  => [
+		),
+	),
+	'content'          => array(
+		'blocks'  => array(
 			'post_title'     => 'Block Content Examples',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-			'meta_input'     => [ '_genesis_layout' => 'full-width-content' ],
-		],
-		'about'   => [
+			'meta_input'     => array( '_genesis_layout' => 'full-width-content' ),
+		),
+		'about'   => array(
 			'post_title'     => 'About Us',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
 			'post_type'      => 'page',
@@ -54,20 +54,20 @@ return [
 			'featured_image' => CHILD_URL . '/config/import/images/about.jpg',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-			'meta_input'     => [
+			'meta_input'     => array(
 				'_genesis_layout'              => 'full-width-content',
 				'_genesis_hide_singular_image' => true,
-			],
-		],
-		'contact' => [
+			),
+		),
+		'contact' => array(
 			'post_title'     => 'Contact Us',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-		],
-		'landing' => [
+		),
+		'landing' => array(
 			'post_title'     => 'Landing Page',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/landing-page.php',
 			'post_type'      => 'page',
@@ -75,66 +75,66 @@ return [
 			'page_template'  => 'page-templates/landing.php',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-			'meta_input'     => [
+			'meta_input'     => array(
 				'_genesis_layout'              => 'full-width-content',
 				'_genesis_hide_breadcrumbs'    => true,
 				'_genesis_hide_singular_image' => true,
 				'_genesis_hide_footer_widgets' => true,
-			],
-		],
-	],
-	'navigation_menus' => [
-		'primary' => [
-			'homepage' => [
+			),
+		),
+	),
+	'navigation_menus' => array(
+		'primary' => array(
+			'homepage' => array(
 				'title' => 'Home',
-			],
-			'about'    => [
+			),
+			'about'    => array(
 				'title' => 'About Us',
-			],
-			'contact'  => [
+			),
+			'contact'  => array(
 				'title' => 'Contact Us',
-			],
-			'blocks'   => [
+			),
+			'blocks'   => array(
 				'title' => 'Block Examples',
-			],
-			'landing'  => [
+			),
+			'landing'  => array(
 				'title' => 'Landing Page',
-			],
-		],
-	],
-	'widgets'          => [
-		'footer-1' => [
-			[
+			),
+		),
+	),
+	'widgets'          => array(
+		'footer-1' => array(
+			array(
 				'type' => 'text',
-				'args' => [
+				'args' => array(
 					'title'  => 'Design',
 					'text'   => '<p>With an emphasis on typography, white space, and mobile-optimized design, your website will look absolutely breathtaking.</p><p><a href="#">Learn more about design</a>.</p>',
 					'filter' => 1,
 					'visual' => 1,
-				],
-			],
-		],
-		'footer-2' => [
-			[
+				),
+			),
+		),
+		'footer-2' => array(
+			array(
 				'type' => 'text',
-				'args' => [
+				'args' => array(
 					'title'  => 'Content',
 					'text'   => '<p>Our team will teach you the art of writing audience-focused content that will help you achieve the success you truly deserve.</p><p><a href="#">Learn more about content</a>.</p>',
 					'filter' => 1,
 					'visual' => 1,
-				],
-			],
-		],
-		'footer-3' => [
-			[
+				),
+			),
+		),
+		'footer-3' => array(
+			array(
 				'type' => 'text',
-				'args' => [
+				'args' => array(
 					'title'  => 'Strategy',
 					'text'   => '<p>We help creative entrepreneurs build their digital business by focusing on three key elements of a successful online platform.</p><p><a href="#">Learn more about strategy</a>.</p>',
 					'filter' => 1,
 					'visual' => 1,
-				],
-			],
-		],
-	],
-];
+				),
+			),
+		),
+	),
+);

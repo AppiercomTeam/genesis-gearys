@@ -8,10 +8,10 @@
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-$genesis_sample_default_colors = [
+$genesis_sample_default_colors = array(
 	'link'   => '#367c2b', // green.
 	'accent' => '#fdda01', // yellow.
-];
+);
 
 $genesass_link_color = get_theme_mod(
 	'genesass_link_color',
