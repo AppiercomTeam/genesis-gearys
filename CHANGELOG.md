@@ -12,6 +12,9 @@
 -- renamed _resets.scss to _normalize.scss
 -- changed all media queries to use breakpoint variables
 -- renamedfont-family-regular to font-family--normal
+- PHP
+-- refactored arrays in /config to WPCS
+-- re-enabled the header widget area
 
 ### Removed
 - SCSS
