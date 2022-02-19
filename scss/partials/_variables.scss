@@ -50,6 +50,9 @@ $forest-green: #22491D;
 $morning-blue: #909992;
 $rifle-green: #484E41;
 $olive-green: #A59B55;
+$light-gray: #CFD3D0; // a tint of morning blue
+$wheat: #f5f0e9; // isabelline
+$lemon: #FFF8C9; // tint of secondary
 
 // Utility Colours
 $light: $gray-200;
@@ -61,6 +64,12 @@ $danger: #D50000; // material design -red-A700
 
 
 // Font colors
+// ---------------------------------------------------------------------------
+
+// Black Chocolate
+$body--font-color: $black-chocolate;
+$input--font-color: $body--font-color;
+
 $archive-pagination--font-color-hover: $white;
 $archive-pagination--font-color: $gray-800;
 $button--font-color-hover: $black;
@@ -74,16 +83,13 @@ $genesis-nav-menu--font-color-hover: $gray-400;
 $genesis-nav-menu--font-color: $gray-800;
 $gs-faq__question--font-color-hover: $primary;
 $gs-faq__question--font-color: $gray-800;
-$input--font-color: $gray-900;
+
 $link--font-color-hover: $secondary;
 $link--font-color: $primary;
 $menu-highlight__link--font-color: $white;
-$menu-toggle--font-color-hover: $primary;
-$menu-toggle--font-color: $gray-800;
+
 $sidebar__widget-title--font-color: $gray-800;
 $site-title__link--font-color: $gray-800;
-$sub-menu-toggle--font-color-hover: $primary;
-$sub-menu-toggle--font-color: $gray-800;
 
 // Background colors
 $archive-pagination--background-color-hover: $gray-800;
@@ -97,7 +103,6 @@ $disabled--background-color-hover: $gray-100;
 $enews__sidebar--background-color: $gray-100;
 $footer-widgets--background-color: $white;
 $forms__background-color: $white;
-$genesis-nav-menu__sub-menu__link--background-color: $white;
 $genesis-nav-menu--background-color-hover: $gray-400;
 $genesis-nav-menu--background-color: $gray-800;
 $genesis-nav-menu__highlight-link--background-color: $gray-800;
@@ -211,7 +216,6 @@ $entry-title--font-size: 2.7rem;
 $featured-content__entry-title--font-size: 1.6rem;
 $footer-widgets--font-size: $font-size-small; // not used?
 $forms--font-size: $font-size--normal;
-$genesis-nav-menu__sub-menu__link--font-size: $font-size-small;
 $genesis-nav-menu--font-size: $font-size--normal;
 $sidebar--font-size: $font-size--normal;
 $site-footer--font-size: 1.5rem;

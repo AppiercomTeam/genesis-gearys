@@ -18,6 +18,6 @@ return array(
 		),
 	),
 	'extras' => array(
-		'media_query_width' => '960px',
+		'media_query_width' => '768px',
 	),
 );

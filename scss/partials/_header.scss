@@ -68,3 +68,70 @@
 	width: 1px;
 	word-wrap: normal !important;
 }
+
+
+/* Title Area
+--------------------------------------------- */
+.header-widget-area {
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+
+	@media only screen and (min-width: $width-md) {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0 ($spacer * 1.5);
+
+		section {
+			flex-basis: 32%;
+		}
+	}
+
+	// email and phone
+	#custom_html-2 {
+		order: 2;
+		text-align: center;
+
+		@media only screen and (min-width: $width-md) {
+			order: 1;
+			text-align: left;
+		}
+	}
+
+	// logo
+	#media_image-2 {
+		order: 1;
+
+		@media only screen and (min-width: $width-md) {
+			order: 2;
+		}
+
+		a {
+			display: block;
+		}
+
+		img {
+			height: auto;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	#jetpack_widget_social_icons-2 {
+		order: 3;
+		text-align: center;
+
+		@media only screen and (min-width: $width-md) {
+			text-align: right;
+		}
+	}
+
+	.widget {
+		margin-bottom: $spacer;
+
+		&:after {
+			clear: none;
+		}
+	}
+}
