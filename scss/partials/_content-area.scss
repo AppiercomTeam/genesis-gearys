@@ -49,12 +49,7 @@
 
 // Other
 .entry-content {
-	code {
-		background-color: $code--background-color;
-	}
-
 	.sticky {
-		background-color: $sticky--background-color;
 		padding: ($spacer * 3);
 	}
 }
@@ -64,7 +59,6 @@
 --------------------------------------------- */
 .entry-meta {
 	p & {
-		font-size: $entry-meta--font-size;
 		margin-bottom: 0;
 	}
 
@@ -107,29 +101,11 @@
 		display: inline;
 
 		a {
-			background-color: $archive-pagination--background-color;
-			color: $archive-pagination--font-color;
 			cursor: pointer;
 			display: inline-block;
-			font-size: $archive-pagination--font-size;
-			font-weight: 600;
 			margin-bottom: $spacer * 0.4;
 			padding: ($spacer * 0.8) ($spacer * 1.2);
 			text-decoration: none;
-
-			&:hover,
-			&:focus {
-				background-color: $archive-pagination--background-color-hover;
-				color: $archive-pagination--font-color-hover;
-			}
-		}
-
-		&.active {
-			a {
-
-				background-color: $archive-pagination--background-color-hover;
-				color: $archive-pagination--font-color-hover;
-			}
 		}
 	}
 }

@@ -2,12 +2,10 @@
 ---------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: $site-header--background-color;
 	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
 	padding: 0;
 
 	@media only screen and (min-width: $width-lg) {
-		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 		z-index: 9999;
@@ -40,18 +38,13 @@
 }
 
 .site-title {
-	font-size: $site-title--font-size;
-	font-weight: 600;
-	line-height: $line-height--smaller;
 	margin-bottom: 0;
 
 	a {
-		color: $site-title__link--font-color;
 		text-decoration: none;
 
 		&:focus,
 		&:hover {
-			color: $site-title__link--font-color;
 			text-decoration: none;
 		}
 	}

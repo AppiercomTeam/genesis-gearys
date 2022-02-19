@@ -27,12 +27,10 @@
 /* Genesis
 --------------------------------------------- */
 
-.archive-description,
-.author-box {
+.archive-description {
 	margin-bottom: ($spacer * 4);
 
 	@media only screen and (min-width: $width-lg) {
-		background-color: $author-box--background-color;
 		padding: ($spacer * 3);
 	}
 }
@@ -56,7 +54,6 @@
 
 .breadcrumb {
 	border-bottom: $border-width $border-style $border-color;
-	font-size: $breadcrumb--font-size;
 	margin-bottom: ($spacer * 4);
 	padding-bottom: $spacer;
 
@@ -121,49 +118,6 @@ input[type="submit"] {
 	}
 }
 
-/* Display outline on focus */
-:focus {
-	color: $gray-800;
-	outline: $gray-400 solid 1px;
-}
-
-/* Titles
---------------------------------------------- */
-
-.archive-description .entry-title,
-.archive-title,
-.author-box-title {
-	font-size: $archive-author-box__entry-title--font-size;
-	font-weight: 600;
-	margin-bottom: $spacer;
-}
-
-.entry-title {
-	font-size: $entry-title--font-size;
-	margin-bottom: $spacer;
-
-	a {
-		color: $sidebar__widget-title--font-color;
-		text-decoration: none;
-
-		&:focus,
-		&:hover {
-			color: $entry-title__link--font-color-hover;
-		}
-	}
-}
-
-
-.widget-title {
-	font-weight: 600;
-	margin-bottom: ($spacer * 2);
-}
-
-.genesis-title-hidden {
-	.site-inner {
-		padding-top: 0;
-	}
-}
 
 /* WordPress
 --------------------------------------------- */
@@ -223,13 +177,10 @@ img.alignright,
 figcaption,
 .gallery-caption,
 .wp-caption-text {
-	font-size: $font-size--small;
-	font-weight: 600;
 	margin-top: ($spacer * 0.5);
 	margin-bottom: ($spacer);
 	padding-left: ($spacer);
 	padding-right: ($spacer);
-	text-align: center;
 }
 
 .entry-content {

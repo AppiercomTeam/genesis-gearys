@@ -40,10 +40,6 @@
 		width: 100%;
 	}
 
-	td,
-	th {
-		text-align: center;
-	}
 }
 
 
@@ -62,7 +58,6 @@
 	}
 
 	.entry-title {
-		font-size: $featured-content__entry-title--font-size;
 		margin-bottom: ($spacer * 0.5);
 		margin-top: ($spacer);
 	}

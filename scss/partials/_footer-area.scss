@@ -2,7 +2,6 @@
 ---------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: $rifle-green;
 	background-image: url(images/site-footer-farm.png);
 	background-position: bottom right;
 	background-repeat: no-repeat;
@@ -25,7 +24,6 @@
 		}
 
 		.footer-widget-area {
-			color: $light-gray;
 			flex-basis: 100%;
 			margin-bottom: ($spacer * 4);
 			padding: 0;
@@ -40,10 +38,7 @@
 			}
 
 			.widget-title {
-				color: $white;
-				font-weight: 700;
 				margin: 0 0 ($spacer * 3) 0;
-				text-transform: uppercase;
 				position: relative;
 
 				&:before {
@@ -58,14 +53,7 @@
 				}
 			}
 
-			a {
-				color: $white;
-				font-weight: 600;
 
-				&:hover {
-					color: $lemon;
-				}
-			}
 		}
 
 		.widget:last-child {
@@ -83,21 +71,13 @@
 /* Site Footer (below footer widgets)
 ---------------------------------------------------------------------------- */
 .site-footer {
-	background-color: darken($rifle-green, 5%);
-	color: $light-gray;
-	font-size: $font-size--small;
-	line-height: $line-height--medium;
 	padding: ($spacer * 3);
-	text-align: center;
 
 	a {
-		color: $white;
-		font-weight: 600;
 		text-decoration: none;
 		transition: all 500ms ease;
 
 		&:hover {
-			color: $lemon;
 			text-decoration: underline;
 		}
 	}

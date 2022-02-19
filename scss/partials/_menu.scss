@@ -3,7 +3,6 @@
 
 .genesis-nav-menu {
 	clear: both;
-	line-height: $line-height--smaller;
 	width: 100%;
 
 	.menu-item {
@@ -31,20 +30,15 @@
 	}
 
 	a {
-		color: $black-chocolate;
 		display: block;
-		font-size: $font-size--normal;
-		font-weight: 400;
 		outline-offset: -1px;
 		padding-bottom: ($spacer * 1.2);
 		padding-top: ($spacer * 1.2);
 		position: relative;
 		text-decoration: none;
-		text-shadow: 0 1px 1px $gray-200;
 
 		&:focus,
 		&:hover {
-			color: $black-chocolate;
 			text-decoration: none;
 
 			@media only screen and (min-width: $width-lg) {
@@ -78,13 +72,10 @@
 
 	.current-menu-item {
 		>a {
-			color: $black;
-			font-weight: 700;
 			text-decoration: none;
 
 			@media only screen and (min-width: $width-lg) {
-				font-weight: 400;
-				text-shadow: 0 1px 1px $lemon;
+
 
 				&:before {
 					opacity: 1;
@@ -124,17 +115,13 @@
 
 				&:focus,
 				&:hover {
-					color: $genesis-nav-menu--font-color-hover;
 					text-decoration: none;
 				}
 			}
 		}
 
 		a {
-			background-color: transparent;
-			font-size: $font-size--normal;
 			position: relative;
-			word-wrap: break-word;
 			width: 100%;
 
 			@media only screen and (min-width: $width-lg) {
@@ -199,11 +186,8 @@
 }
 
 .menu-toggle {
-	background-color: transparent;
 	border-width: 0;
-	color: $body--font-color;
 	display: block;
-	line-height: $line-height--large;
 	margin-bottom: $spacer;
 	margin-left: auto;
 	margin-right: auto;
@@ -211,7 +195,6 @@
 	overflow: hidden;
 	padding: ($spacer * 1.5);
 	position: relative;
-	text-align: center;
 	visibility: visible;
 	z-index: 1000;
 
@@ -229,11 +212,7 @@
 		}
 	}
 
-	&:focus,
-	&:hover {
-		background-color: transparent;
-		color: $forest-green;
-	}
+
 
 	@media only screen and (min-width: $width-lg) {
 		display: none;
@@ -243,9 +222,7 @@
 
 // aka, the chevron
 .sub-menu-toggle {
-	background-color: transparent;
 	border-width: 0;
-	color: $black-chocolate;
 	display: block;
 	float: right;
 	margin: 0 auto;
@@ -253,16 +230,9 @@
 	padding: ($spacer);
 	position: absolute;
 	right: 0;
-	text-align: center;
 	top: 0;
 	visibility: visible;
 	z-index: 100;
-
-	&:focus,
-	&:hover {
-		background-color: transparent;
-		color: $forest-green;
-	}
 
 	&:before {
 		display: inline-block;
@@ -297,14 +267,11 @@
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: $light-gray;
 	clear: left;
-	color: $black-chocolate;
 	padding: 0;
 	width: 100%;
 
 	@media only screen and (min-width: $width-lg) {
-		background-color: $wheat;
 		background-image: url(images/header-bg.png);
 		background-position: center top;
 		background-repeat: repeat-x;
@@ -346,10 +313,6 @@
 
 .nav-secondary {
 	margin-top: ($spacer);
-
-	.genesis-nav-menu {
-		line-height: $line-height--medium;
-	}
 
 	.menu-item {
 		display: inline-block;

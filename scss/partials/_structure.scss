@@ -6,7 +6,6 @@
 
 .site-container {
 	animation: fadein 1s;
-	word-wrap: break-word;
 }
 
 @keyframes fadein {
@@ -27,9 +26,23 @@
 .site-inner {
 	clear: both;
 	margin: 0 auto;
-	padding: ($spacer * 6) ($spacer * 3) 0;
+	padding: ($spacer * 3) ($spacer * 2);
 
 	@media only screen and (min-width: $width-lg) {
 		max-width: 1200px;
+		padding: ($spacer * 7) ($spacer * 3) 0;
 	}
+}
+
+/* Sticky Footer
+--------------------------------------------- */
+.site-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 98vh;
+}
+
+.site-inner {
+	flex: 1;
+	width: 100%;
 }

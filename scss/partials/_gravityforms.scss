@@ -142,7 +142,7 @@ body {
 					// Contains the field description inside the containing list item
 					// aka, the Help Text
 					.gfield_description {
-						font-size: $font-size--small;
+						font-size: $font-size-sm;
 						font-style: italic;
 						padding-left: ($spacer * 1.5);
 						padding-top: 0;
@@ -157,17 +157,17 @@ body {
 					textarea {
 						&::placeholder {
 							color: $gray-500;
-							font-size: $forms--font-size;
+							font-size: $font-size-base;
 							font-style: italic;
 						}
 					}
 
 					// standard text field (input)
 					input[type=text] {
-						background-color: $input__background-color;
+						background-color: $white;
 						border-color: $border-color;
-						color: $input--font-color;
-						font-size: $forms--font-size;
+						color: $black-chocolate;
+						font-size: $font-size-base;
 						font-style: normal;
 						padding: ($spacer * 1.5);
 
@@ -179,10 +179,10 @@ body {
 
 					// standard drop-down field (select)
 					select {
-						background-color: $input__background-color;
+						background-color: $white;
 						border-color: $border-color;
-						color: $input--font-color;
-						font-size: $forms--font-size;
+						color: $black-chocolate;
+						font-size: $font-size-base;
 						font-style: normal;
 						min-height: 1em;
 						padding: ($spacer * 1.5);
@@ -190,7 +190,7 @@ body {
 						option {
 							&.gf_placeholder {
 								color: $gray-500;
-								font-size: $font-size--small;
+								font-size: $font-size-sm;
 								font-style: italic;
 							}
 						}
@@ -203,10 +203,10 @@ body {
 
 					// standard paragraph field (textarea)
 					textarea {
-						background-color: $input__background-color;
+						background-color: $white;
 						border-color: $border-color;
-						color: $input--font-color;
-						font-size: $forms--font-size;
+						color: $black-chocolate;
+						font-size: $font-size-base;
 						font-style: normal;
 						padding: ($spacer * 1.5);
 
@@ -266,9 +266,7 @@ body {
 						}
 
 						button {
-							background-color: $button--background-color;
-							color: choose-contrast-color($button--background-color);
-							font-size: $button--font-size;
+							font-size: $font-size-lg;
 							font-weight: 400;
 							margin-top: 0;
 							padding: ($spacer * 0.7);
@@ -420,8 +418,8 @@ body {
 					input[type=url] {
 						background-color: $white;
 						border-color: $gray-200;
-						color: $input--font-color;
-						font-size: $forms--font-size;
+						color: $black-chocolate;
+						font-size: $font-size-base;
 						padding: ($spacer * 1.6);
 
 						&:focus {
@@ -435,7 +433,7 @@ body {
 					}
 
 					.gform_button_select_files {
-						font-size: $font-size--normal;
+						font-size: $font-size-base;
 						font-weight: 400;
 						padding: ($spacer) ($spacer * 1.5);
 						text-transform: uppercase;
@@ -543,8 +541,7 @@ body {
 				border-radius: 5px;
 				color: choose-contrast-color($primary);
 				float: right;
-				font-family: $base-font;
-				font-size: $button--font-size;
+				font-size: $font-size-lg;
 				font-weight: 400;
 				padding: ($spacer * 1.5) ($spacer * 3);
 				text-transform: uppercase;

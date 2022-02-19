@@ -109,6 +109,195 @@ $value in $all-colors {
 	}
 }
 
+/* ---------------------------------------------------------------------------
+ MAIN COLOURS
+--------------------------------------------------------------------------- */
+body {
+	background-color: $wheat;
+	color: $black-chocolate;
+}
+
+/* Header
+ --------------------------------------------------------------------------- */
+.site-header {
+	background-color: $white;
+}
+
+.site-title {
+	a {
+		color: $black-chocolate;
+
+		&:focus,
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+/* Main Menu
+ --------------------------------------------------------------------------- */
+.nav-primary {
+	background-color: $light-gray;
+	color: $black-chocolate;
+
+	@media only screen and (min-width: $width-lg) {
+		background-color: $wheat;
+	}
+}
+
+.genesis-nav-menu {
+	a {
+		color: $black-chocolate;
+
+		&:focus,
+		&:hover {
+			color: $black-chocolate;
+		}
+	}
+
+	.current-menu-item {
+		>a {
+			color: $black;
+		}
+	}
+
+	.sub-menu {
+		a {
+			background-color: transparent;
+		}
+
+		.current-menu-item {
+			>a {
+
+				&:focus,
+				&:hover {
+					color: $black-chocolate;
+				}
+			}
+		}
+	}
+}
+
+.menu-toggle {
+	background-color: transparent;
+	color: $black-chocolate;
+
+	&:focus,
+	&:hover {
+		background-color: transparent;
+		color: $forest-green;
+	}
+}
+
+// aka, the chevron
+.sub-menu-toggle {
+	background-color: transparent;
+	color: $black-chocolate;
+
+	&:focus,
+	&:hover {
+		background-color: transparent;
+		color: $forest-green;
+	}
+}
+
+/* Footer
+ --------------------------------------------------------------------------- */
+.footer-widgets {
+	background-color: $rifle-green;
+
+	.wrap {
+		.footer-widget-area {
+			color: $light-gray;
+
+			.widget-title {
+				color: $white;
+			}
+
+			a {
+				color: $white;
+
+				&:hover {
+					color: $lemon;
+				}
+			}
+		}
+	}
+}
+
+.site-footer {
+	background-color: darken($rifle-green, 5%);
+	color: $light-gray;
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $lemon;
+			text-decoration: underline;
+		}
+	}
+}
+
+/* Content
+ --------------------------------------------------------------------------- */
+.entry-content {
+
+	/* Code */
+	code {
+		background-color: $gray-200;
+	}
+
+	/* Sticky */
+	.sticky {
+		background-color: $gray-100;
+	}
+
+}
+
+/* Links */
+a {
+	color: $primary;
+
+	&:focus,
+	&:hover {
+		color: $secondary;
+	}
+}
+
+/* Sidebar
+ --------------------------------------------------------------------------- */
+.sidebar {
+	.widget-title {
+		a {
+			color: $black-chocolate;
+		}
+	}
+}
+
+
+/* Plugins
+ --------------------------------------------------------------------------- */
+// eNews
+.sidebar {
+	.enews {
+		background-color: $white;
+		padding: ($spacer * 3);
+	}
+}
+
+// Genesis Simple FAQ
+.gs-faq__question {
+	background: transparent;
+	color: $black-chocolate;
+
+	&:focus,
+	&:hover {
+		background: transparent;
+		color: $primary;
+	}
+}
+
 
 /* Misc
  --------------------------------------------------------------------------- */
@@ -117,12 +306,97 @@ $value in $all-colors {
 	color: choose-contrast-color($primary);
 }
 
+::placeholder {
+	color: $gray-800;
+	opacity: 1;
+}
+
+hr {
+	color: $gray-300;
+}
+
 mark {
 	background-color: $primary;
 	color: choose-contrast-color($primary);
-	padding: 0 3px;
 }
 
 .required {
 	color: $red;
+}
+
+/* Display outline on focus */
+:focus {
+	color: $gray-800;
+	outline: $gray-400 solid 1px;
+}
+
+/* Pagination */
+.archive-pagination {
+	li {
+		a {
+			background-color: $gray-100;
+			color: $gray-800;
+
+			&:focus,
+			&:hover {
+				background-color: $gray-800;
+				color: $gray-100;
+			}
+		}
+
+		&.active {
+			a {
+				background-color: $gray-800;
+				color: $gray-100;
+			}
+		}
+	}
+}
+
+/* Screen Reader Text */
+.screen-reader-shortcut,
+.screen-reader-text,
+.screen-reader-text span {
+	&:focus {
+		background: $white;
+		color: $gray-800;
+	}
+}
+
+
+/* Buttons */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	background-color: $secondary;
+	color: choose-contrast-color($secondary);
+
+	&:hover {
+		background-color: $primary;
+		color: choose-contrast-color($primary);
+	}
+
+	&:focus {
+		background-color: $forest-green;
+		color: choose-contrast-color($forest-green);
+	}
+
+	&:disabled {
+		background-color: $gray-300;
+		color: $gray-700;
+
+		&:hover {
+			background-color: $gray-400;
+			color: $gray-800;
+		}
+	}
+}
+
+input,
+select,
+textarea {
+	background-color: $white;
+	color: $black-chocolate;
 }

@@ -1,0 +1,376 @@
+/* TYPOGRAPHY
+ * covering font-family, font-size, font-weight, line-height, text-align and
+ * text-transform, text-shadow, white-space, word-wrap
+---------------------------------------------------------------------------- */
+
+/* Body
+--------------------------------------------- */
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: 400;
+	line-height: $line-height--normal;
+
+	.site-container {
+		word-wrap: break-word;
+	}
+}
+
+/* Misc
+--------------------------------------------- */
+b,
+strong {
+	font-weight: 700;
+}
+
+/* Footer
+--------------------------------------------- */
+.footer-widgets {
+	.wrap {
+		.footer-widget-area {
+			.widget-title {
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
+			a {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.site-footer {
+	font-size: $font-size-sm;
+	line-height: $line-height--medium;
+	text-align: center;
+
+	a {
+		font-weight: 600;
+	}
+}
+
+/* Menu
+--------------------------------------------- */
+.genesis-nav-menu {
+	line-height: $line-height-xs;
+
+	a {
+		font-size: $font-size-base;
+		font-weight: 400;
+		text-shadow: 0 1px 1px $gray-200;
+	}
+
+	.sub-menu {
+		a {
+			font-size: $font-size-base;
+			word-wrap: break-word;
+		}
+	}
+
+	.current-menu-item {
+		>a {
+			font-weight: 700;
+
+			@media only screen and (min-width: $width-lg) {
+				font-weight: 400;
+				text-shadow: 0 1px 1px $lemon;
+			}
+		}
+	}
+}
+
+.menu-toggle {
+	line-height: $line-height-lg;
+	text-align: center;
+}
+
+.sub-menu-toggle {
+	text-align: center;
+}
+
+.nav-secondary {
+	margin-top: ($spacer);
+
+	.genesis-nav-menu {
+		line-height: $line-height-base;
+	}
+}
+
+/* Headings
+--------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	line-height: $line-height--small;
+	margin: ($spacer * 2) 0 ($spacer * 5) 0;
+	text-transform: uppercase;
+}
+
+// title for page, single, archive, search, the 404
+h1,
+.h1 {
+	font-size: $h1-font-size;
+}
+
+// skip links, main navigation, sidebars (and in the content)
+h2,
+.h2 {
+	font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+	font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+	font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+	font-size: $h6-font-size;
+}
+
+
+
+// widget-titles (and in the content)
+h3 {
+	font-size: 2rem;
+}
+
+// only used in the content
+h4 {
+	font-size: 1.6rem;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	font-weight: 600;
+}
+
+.entry-content h4 {
+	margin-top: ($spacer * 4);
+}
+
+// only used in the content
+h5 {
+	font-size: 1.4rem;
+}
+
+// only used in the content
+h6 {
+	font-size: 1.2rem;
+}
+
+/* Breadcrumbs
+--------------------------------------------- */
+.breadcrumb {
+	font-size: $font-size-sm;
+}
+
+/* Entry Meta
+--------------------------------------------- */
+.entry-meta {
+	p & {
+		font-size: $font-size-sm;
+	}
+}
+
+/* Images
+--------------------------------------------- */
+figcaption,
+.gallery-caption,
+.wp-caption-text {
+	font-size: $font-size-sm;
+	font-weight: 600;
+	text-align: center;
+}
+
+.gallery-item {
+	text-align: center;
+}
+
+/* Pagination
+--------------------------------------------- */
+.archive-pagination {
+	li {
+		a {
+			font-size: $font-size-base;
+			font-weight: 600;
+		}
+	}
+}
+
+/* Titles
+--------------------------------------------- */
+.site-title {
+	font-size: $font-size-xl;
+	font-weight: 600;
+	line-height: $line-height--smaller;
+}
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	font-size: $font-size-xl;
+	font-weight: 600;
+	margin-bottom: $spacer;
+}
+
+.entry-title {
+	font-size: $h1-font-size;
+	margin-bottom: $spacer;
+
+	a {
+		text-decoration: none;
+	}
+
+	/* Featured Content Widget
+	--------------------------------------------- */
+	.featured-content & {
+		font-size: $h3-font-size;
+	}
+}
+
+.widget-title {
+	font-weight: 600;
+	margin-bottom: ($spacer * 2);
+}
+
+.genesis-title-hidden {
+	.site-inner {
+		padding-top: 0;
+	}
+}
+
+/* Sidebar
+-------------------------------------------------- */
+.sidebar {
+	font-size: $font-size-base;
+	line-height: $line-height--medium;
+}
+
+/* Buttons
+-------------------------------------------------- */
+body {
+	.site-container {
+
+		/* WordPress Generic Block Buttons */
+		.wp-block-button {
+			.wp-block-button__link {
+				font-size: $font-size-lg;
+				text-transform: uppercase;
+
+				strong {
+					font-weight: 400;
+				}
+			}
+		}
+
+		/* Genesis Buttons */
+		.wp-block-genesis-blocks-gb-button,
+		.gb-block-button {
+			a {
+				font-size: $font-size-lg;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+
+		.gb-button-size-medium {
+			font-size: $font-size-lg;
+		}
+	}
+
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	font-size: $font-size-lg;
+	font-weight: 600;
+	text-align: center;
+	white-space: normal;
+}
+
+/* Forms
+--------------------------------------------- */
+input,
+select,
+textarea {
+	font-size: $font-size-base;
+	font-weight: 400;
+}
+
+/* Widget Calendar
+-------------------------------------------------- */
+.widget_calendar {
+
+	td,
+	th {
+		text-align: center;
+	}
+}
+
+/* Genesis eNews Extended
+-------------------------------------------------- */
+.enews-widget {
+	input {
+		font-size: $font-size-base;
+		text-align: center;
+	}
+}
+
+.after-entry {
+	.enews {
+		text-align: center;
+	}
+}
+
+/* Screen Reader Text
+--------------------------------------------- */
+.screen-reader-shortcut,
+.screen-reader-text,
+.screen-reader-text span {
+	word-wrap: normal !important;
+
+	&:focus {
+		font-size: $font-size-base;
+		font-weight: 700;
+	}
+}
+
+
+/* Tables
+--------------------------------------------- */
+th {
+	font-weight: 600;
+}
+
+td,
+th {
+	line-height: $line-height-xl;
+	text-align: left;
+	vertical-align: top;
+}
