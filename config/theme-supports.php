@@ -46,7 +46,7 @@ return array(
 		// 'nav',
 		// 'subnav',
 		// 'site-inner',
-		// 'footer-widgets',
+		'footer-widgets',
 		// 'footer',
 		// 'nav-footer',
 	),

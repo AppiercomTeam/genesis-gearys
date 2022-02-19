@@ -2,53 +2,105 @@
 ---------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: $footer-widgets--background-color;
-	border-top: $border-width $border-style $border-color;
+	background-color: $rifle-green;
+	background-image: url(images/site-footer-farm.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	clear: both;
-	padding: ($spacer * 6) 0;
+	padding: 0;
+
 
 	.wrap {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column nowrap;
 		margin-left: auto;
 		margin-right: auto;
+		padding: ($spacer * 7) ($spacer * 2);
 
-		@media only screen and (min-width: $width-lg) {
+		@media only screen and (min-width: $width-md) {
+			flex-flow: row nowrap;
+			justify-content: space-between;
 			max-width: 1200px;
+		}
+
+		.footer-widget-area {
+			color: $light-gray;
+			flex-basis: 100%;
+			margin-bottom: ($spacer * 4);
+			padding: 0;
+
+			@media only screen and (min-width: $width-md) {
+				flex-basis: 30%;
+				margin-bottom: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.widget-title {
+				color: $white;
+				font-weight: 700;
+				margin: 0 0 ($spacer * 3) 0;
+				text-transform: uppercase;
+				position: relative;
+
+				&:before {
+					background: $secondary;
+					border-radius: 5px;
+					bottom: -8px;
+					content: "";
+					height: 4px;
+					left: 0;
+					position: absolute;
+					width: 20px;
+				}
+			}
+
+			a {
+				color: $white;
+				font-weight: 600;
+
+				&:hover {
+					color: $lemon;
+				}
+			}
+		}
+
+		.widget:last-child {
+			margin-bottom: 0;
 		}
 	}
 
-	.widget:last-child {
-		margin-bottom: 0;
-	}
-}
 
-.footer-widget-area {
-	margin-bottom: ($spacer * 4);
-	padding-left: ($spacer * 3);
-	padding-right: ($spacer * 3);
-
-	@media only screen and (min-width: $width-lg) {
-		float: left;
-		margin-bottom: 0;
-		width: calc(100% / 3);
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 
 
-/* Site Footer
+
+
+/* Site Footer (below footer widgets)
 ---------------------------------------------------------------------------- */
-
 .site-footer {
-	background-color: $site-footer--background-color;
-	border-top: $border-width $border-style $border-color;
-	font-size: $site-footer--font-size;
+	background-color: darken($rifle-green, 5%);
+	color: $light-gray;
+	font-size: $font-size--small;
 	line-height: $line-height--medium;
 	padding: ($spacer * 3);
 	text-align: center;
+
+	a {
+		color: $white;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 500ms ease;
+
+		&:hover {
+			color: $lemon;
+			text-decoration: underline;
+		}
+	}
 
 	p {
 		margin-bottom: 0;

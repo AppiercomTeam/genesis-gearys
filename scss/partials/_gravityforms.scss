@@ -142,7 +142,7 @@ body {
 					// Contains the field description inside the containing list item
 					// aka, the Help Text
 					.gfield_description {
-						font-size: $font-size-small;
+						font-size: $font-size--small;
 						font-style: italic;
 						padding-left: ($spacer * 1.5);
 						padding-top: 0;
@@ -190,7 +190,7 @@ body {
 						option {
 							&.gf_placeholder {
 								color: $gray-500;
-								font-size: $font-size-small;
+								font-size: $font-size--small;
 								font-style: italic;
 							}
 						}

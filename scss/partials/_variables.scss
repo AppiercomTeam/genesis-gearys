@@ -153,7 +153,7 @@ sans-serif,
 
 // Font Sizes
 // ---------------------------------------------------------------------------
-$font-size-small: 0.875rem; // 14px
+$font-size--small: 0.875rem; // 14px
 $font-size--normal: 1rem; // 16px
 $font-size-large: 1.125rem; // 18px
 $font-size-huge: 2rem; // 32px
@@ -206,7 +206,7 @@ $after-entry__breadcrumb--font-size: 1.6rem;
 $archive-author-box__entry-title--font-size: 2rem;
 $archive-pagination--font-size: $font-size--normal;
 $blockquote__before--font-size: 3rem; // not used
-$breadcrumb--font-size: $font-size-small;
+$breadcrumb--font-size: $font-size--small;
 $button--font-size: 18px;
 $comments--font-size: $font-size--normal; // not used?
 $enews-widget__input--font-size: 1.6rem;
@@ -214,14 +214,12 @@ $entry-content__caption--font-size: 1.4rem;
 $entry-meta--font-size: 1.6rem;
 $entry-title--font-size: 2.7rem;
 $featured-content__entry-title--font-size: 1.6rem;
-$footer-widgets--font-size: $font-size-small; // not used?
+$footer-widgets--font-size: $font-size--small; // not used?
 $forms--font-size: $font-size--normal;
 $genesis-nav-menu--font-size: $font-size--normal;
 $sidebar--font-size: $font-size--normal;
 $site-footer--font-size: 1.5rem;
 $site-title--font-size: 2rem;
-$widget-title--font-size: 1.4rem;
-
 
 
 

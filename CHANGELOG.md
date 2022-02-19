@@ -1,5 +1,13 @@
 # Genesass Theme Changelog
 
+## [0.0.4] - 2022-02-19
+### Added
+### Changed
+- SCSS
+-- footer in rifle green
+- PHP
+-- added theme support for footer-widget wrap so we can set a max inner width.
+
 ## [0.0.3] - 2022-02-18
 ### Added
 - SCSS
@@ -11,7 +19,8 @@
 -- changed `mark` highlighting
 -- renamed _resets.scss to _normalize.scss
 -- changed all media queries to use breakpoint variables
--- renamedfont-family-regular to font-family--normal
+-- renamed font-family-regular to font-family--normal
+-- top header with torn paper effect
 - PHP
 -- refactored arrays in /config to WPCS
 -- re-enabled the header widget area
