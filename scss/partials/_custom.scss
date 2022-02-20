@@ -22,14 +22,6 @@ body {
 			}
 		}
 
-		/* Genesis Buttons */
-		.wp-block-genesis-blocks-gb-button,
-		.gb-block-button {
-			a {
-				padding: 15px 30px;
-			}
-		}
-
 
 	}
 }
@@ -41,7 +33,7 @@ body {
 	.site-inner {
 		.entry-content {
 			>.alignfull {
-				max-width: 99vw !important;
+				// max-width: 99vw !important;
 			}
 		}
 	}
@@ -122,4 +114,163 @@ body {
 	img.social {
 		padding: 3px;
 	}
+}
+
+
+/* Tiny News Grid
+ ------------------------------------- */
+.home {
+	.featuredpost.home-tiny {
+
+		.gb-block-post-grid .is-grid,
+		.gb-block-post-grid .gb-is-grid {
+			justify-content: space-between;
+		}
+
+		.gb-post-grid-item {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+
+			@media only screen and (min-width: $width-md) {
+				justify-content: space-between;
+			}
+
+			.gb-block-post-grid-image {
+				margin: 0 ($spacer) 0 0;
+				padding: 0;
+
+				a {
+					display: block;
+					height: 60px;
+					width: 60px;
+
+					img {
+						height: 60px;
+						width: 60px;
+					}
+				}
+			}
+
+			header {
+				.gb-block-post-grid-title {
+					margin: 0;
+					padding: 0;
+
+					h3 {
+						margin: 0;
+						padding: 0;
+					}
+				}
+			}
+
+			.gb-block-post-grid-byline {
+				&:empty {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+/* Section overlays
+ ------------------------------------- */
+.torn--top {
+	&:before {
+		background-image: url(images/header-bg.png);
+		background-position: center top;
+		background-repeat: repeat-x;
+		content: "";
+		display: block;
+		height: 16px;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.torn--bottom {
+	&:after {
+		background-image: url(images/header-bg-bottom.png);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 16px;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+
+/* Service CTAs
+ ------------------------------------- */
+.card--service {
+	height: 100%;
+	margin-bottom: ($spacer * 4);
+	transition: box-shadow 300ms ease 0ms;
+
+	&:hover {
+		box-shadow: 0px 4px 12px 0px rgba(253, 218, 1, 0.2);
+	}
+
+	.gb-block-layout-column-inner {
+
+		figure {
+			margin-bottom: 0;
+			// margin-left: calc(-100vw / 2 + 100% / 2);
+			// margin-right: calc(-100vw / 2 + 100% / 2);
+		}
+
+		h3 {
+			margin-top: 0;
+			padding: ($spacer * 4) ($spacer * 4) 0 ($spacer * 4);
+
+			@media only screen and (min-width: $width-md) {
+				padding: ($spacer * 2) ($spacer * 2) 0 ($spacer * 2);
+			}
+
+			a {
+				color: inherit;
+				text-decoration: none;
+
+				&:focus,
+				&:active,
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+
+		p {
+			padding: 0 ($spacer * 4);
+
+			@media only screen and (min-width: $width-md) {
+				padding: 0 ($spacer * 2);
+			}
+
+			a {
+				color: inherit;
+				text-decoration: none;
+
+				&:focus,
+				&:active,
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+
 }

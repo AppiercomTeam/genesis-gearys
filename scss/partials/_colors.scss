@@ -113,7 +113,7 @@ $value in $all-colors {
  MAIN COLOURS
 --------------------------------------------------------------------------- */
 body {
-	background-color: $wheat;
+	background-color: transparent;
 	color: $black-chocolate;
 }
 
@@ -204,21 +204,21 @@ body {
 /* Footer
  --------------------------------------------------------------------------- */
 .footer-widgets {
-	background-color: $rifle-green;
+	background-color: $secondary;
 
 	.wrap {
 		.footer-widget-area {
-			color: $light-gray;
+			color: $black;
 
 			.widget-title {
-				color: $white;
+				color: $forest-green;
 			}
 
 			a {
-				color: $white;
+				color: $black-chocolate;
 
 				&:hover {
-					color: $lemon;
+					color: $black;
 				}
 			}
 		}
@@ -226,14 +226,14 @@ body {
 }
 
 .site-footer {
-	background-color: darken($rifle-green, 5%);
-	color: $light-gray;
+	background-color: $black-chocolate;
+	color: $lemon;
 
 	a {
-		color: $white;
+		color: $lemon;
 
 		&:hover {
-			color: $lemon;
+			color: $secondary;
 			text-decoration: underline;
 		}
 	}

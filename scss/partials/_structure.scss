@@ -26,11 +26,58 @@
 .site-inner {
 	clear: both;
 	margin: 0 auto;
-	padding: ($spacer * 3) ($spacer * 2);
+	padding: 0;
 
 	@media only screen and (min-width: $width-lg) {
 		max-width: 1200px;
-		padding: ($spacer * 7) ($spacer * 3) 0;
+	}
+}
+
+
+/* Content with or without Sidebars
+--------------------------------------------- */
+.content-sidebar-wrap {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	@media only screen and (min-width: $width-lg) {
+		flex-flow: row nowrap;
+	}
+
+	.content {
+		flex-basis: 65%;
+		order: 1;
+
+		.full-width-content & {
+			flex-basis: 100%;
+			width: 100%;
+		}
+
+		.sidebar-content & {
+			@media only screen and (min-width: $width-lg) {
+				order: 2;
+			}
+
+		}
+	}
+
+	.sidebar {
+		order: 2;
+
+		@media only screen and (min-width: $width-lg) {
+			flex-basis: 33%;
+
+			.sidebar-content & {
+				order: 1;
+			}
+		}
+	}
+}
+
+article {
+	&.page {
+		margin-bottom: 0;
 	}
 }
 

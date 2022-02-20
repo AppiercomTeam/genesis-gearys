@@ -38,12 +38,12 @@ return array(
 		array(
 			'name'  => __( 'John Deere Green', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
-			'color' => $genesis_sample_link_color,
+			'color' => '#367c2b',
 		),
 		array(
 			'name'  => __( 'John Deere Yellow', 'genesis-sample' ),
 			'slug'  => 'theme-secondary',
-			'color' => $genesis_sample_accent_color,
+			'color' => '#FDDA01',
 		),
 		array(
 			'name'  => __( 'Black Chocolate', 'genesis-sample' ),
@@ -89,6 +89,11 @@ return array(
 			'name'  => __( 'White', 'genesis-sample' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
+		),
+		array(
+			'name'  => __( 'Wheat', 'genesis-sample' ),
+			'slug'  => 'wheat',
+			'color' => '#f5f0e9',
 		),
 	),
 	'editor-font-sizes'    => array(

@@ -5,8 +5,8 @@
 	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
 	padding: 0;
 
-	@media only screen and (min-width: $width-lg) {
-		position: sticky;
+	@media only screen and (min-width: $width-xl) {
+		// position: sticky;
 		top: 0;
 		z-index: 9999;
 	}

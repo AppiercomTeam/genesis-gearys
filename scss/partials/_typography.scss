@@ -9,7 +9,7 @@ body {
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	font-weight: 400;
-	line-height: $line-height--normal;
+	line-height: $line-height-base;
 
 	.site-container {
 		word-wrap: break-word;
@@ -42,7 +42,7 @@ strong {
 
 .site-footer {
 	font-size: $font-size-sm;
-	line-height: $line-height--medium;
+	line-height: $line-height-sm;
 	text-align: center;
 
 	a {
@@ -113,8 +113,8 @@ h6,
 .h6 {
 	font-family: $font-family-heading;
 	font-weight: 700;
-	line-height: $line-height--small;
-	margin: ($spacer * 2) 0 ($spacer * 5) 0;
+	line-height: $line-height-sm;
+	margin: ($spacer * 2) 0 0 0;
 	text-transform: uppercase;
 }
 
@@ -223,15 +223,15 @@ figcaption,
 /* Titles
 --------------------------------------------- */
 .site-title {
-	font-size: $font-size-xl;
+	font-size: $font-size-xxl;
 	font-weight: 600;
-	line-height: $line-height--smaller;
+	line-height: $line-height-xs;
 }
 
 .archive-description .entry-title,
 .archive-title,
 .author-box-title {
-	font-size: $font-size-xl;
+	font-size: $font-size-xxl;
 	font-weight: 600;
 	margin-bottom: $spacer;
 }
@@ -266,7 +266,7 @@ figcaption,
 -------------------------------------------------- */
 .sidebar {
 	font-size: $font-size-base;
-	line-height: $line-height--medium;
+	line-height: $line-height-sm;
 }
 
 /* Buttons
@@ -278,7 +278,6 @@ body {
 		.wp-block-button {
 			.wp-block-button__link {
 				font-size: $font-size-lg;
-				text-transform: uppercase;
 
 				strong {
 					font-weight: 400;
@@ -289,15 +288,31 @@ body {
 		/* Genesis Buttons */
 		.wp-block-genesis-blocks-gb-button,
 		.gb-block-button {
-			a {
-				font-size: $font-size-lg;
-				font-weight: 400;
-				text-transform: uppercase;
-			}
+			a {}
+		}
+
+		.gb-button-size-small {
+			font-size: $font-size-sm;
+			font-weight: 600;
+			padding: 8px 12px;
 		}
 
 		.gb-button-size-medium {
 			font-size: $font-size-lg;
+			font-weight: 600;
+			padding: 1em 1.3em;
+		}
+
+		.gb-button-size-large {
+			font-size: $font-size-xl;
+			font-weight: 700;
+			padding: 1.3em;
+		}
+
+		.gb-button-size-extralarge {
+			font-size: $font-size-xxl;
+			font-weight: 900;
+			padding: 1.5em;
 		}
 	}
 

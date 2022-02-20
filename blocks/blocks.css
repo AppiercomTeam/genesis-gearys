@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+::root {
+	--theme-primary: #367c2b;
+	--theme-secondary: #FDDA01;
+	--black-chocolate: #27251F;
+	--heading-font: 'Amatic SC', cursive;
+	--base-font: 'Raleway',sans-serif;
+}

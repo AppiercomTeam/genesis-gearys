@@ -1,17 +1,33 @@
-body {
-	color: #333;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.625;
+/**
+ * Gutenberg Editor
+ */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+::root {
+	--base-font: 'Raleway', sans-serif;
 }
+
+.editor-styles-wrapper,
+.editor-styles-wrapper * {
+	/* font-family: "Raleway", sans-serif; */
+}
+
+body {
+	/* color: #333; */
+	/* font-family: "Source Sans Pro", sans-serif; */
+	/* font-size: 18px; */
+	/* font-weight: 400; */
+	/* line-height: 1.625; */
+}
+
 
 p,
 ul,
 ol,
 dl {
-	font-size: 18px;
-	line-height: 1.625;
+	/* font-size: 18px;
+	line-height: 1.625; */
+	font-family: 'Raleway', sans-serif;
 }
 
 /* Regular content width.
@@ -56,12 +72,12 @@ dl {
 ---------------------------------------------------------------------------- */
 
 a {
-	color: #0073e5;
+	color: #367c2b;
 }
 
 a:focus,
 a:hover {
-	color: #333;
+	color: #FDDA01;
 	text-decoration: none;
 }
 
@@ -71,7 +87,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -104,8 +119,12 @@ h6 {
 	font-size: 16px;
 }
 
+.editor-post-title__block {
+		font-family: "Raleway",
+		sans-serif;
+}
 .editor-post-title__block .editor-post-title__input {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 1.2;
@@ -179,7 +198,7 @@ p.has-background.light-text a:hover {
 
 .wp-block-pullquote p,
 .wp-block-quote p {
-	font-family: "Source Sans Pro", serif;
+	font-family: "Raleway", serif;
 	font-size: 21px !important;
 	font-style: italic;
 	line-height: 1.8;
@@ -216,7 +235,7 @@ p.has-background.light-text a:hover {
 .wp-block-quote .wp-block-quote__citation {
 	color: #666;
 	display: block;
-	font-family: "Source Sans Pro", serif;
+	font-family: "Raleway", serif;
 	font-size: 16px;
 	font-style: italic;
 	margin-top: -25px;
@@ -338,7 +357,7 @@ table {
 ---------------------------------------------------------------------------- */
 
 .gb-block-cta .gb-button {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 }
 
@@ -347,7 +366,7 @@ table {
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 16px;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	line-height: 24px;
 	padding: 15px 30px;
@@ -414,4 +433,10 @@ table {
 
 .wp-block[data-align="full"] .wp-block-latest-posts {
 	padding: 0 30px;
+}
+
+/* Headings
+---------------------------------------------------------------------------- */
+.wp-block-heading {
+	font-family: 'Amatic SC', cursive;
 }

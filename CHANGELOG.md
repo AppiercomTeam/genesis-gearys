@@ -2,9 +2,15 @@
 
 ## [0.0.4] - 2022-02-19
 ### Added
+- Blocks
+-- Block for underline header
+
 ### Changed
 - SCSS
 -- footer in rifle green
+-- separated out colours and typography
+- CSS
+-- changed some editor styles to match frontend fonts
 - PHP
 -- added theme support for footer-widget wrap so we can set a max inner width.
 

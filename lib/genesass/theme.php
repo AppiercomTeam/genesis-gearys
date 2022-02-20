@@ -43,3 +43,26 @@ if ( ! function_exists( 'genesass_mute_jquery_migrator' ) ) {
 add_action( 'wp_head', 'genesass_mute_jquery_migrator' );
 add_action( 'admin_head', 'genesass_mute_jquery_migrator' );
 
+
+/*
+ * Gutenberg Editor CSS
+ *
+ * Load a stylesheet for customizing the Gutenberg editor
+ * including support for Google Fonts and @import rules.
+ */
+function genesass_gutenberg_editor_css() {
+	$css     = '/lib/gutenberg/style-editor.css';
+	$version = filemtime( get_stylesheet_directory() . $css );
+	wp_enqueue_style( 'editor-css', get_stylesheet_directory_uri() . $css, array(), $version );
+}
+add_action( 'enqueue_block_editor_assets', 'genesass_gutenberg_editor_css' );
+
+
+/** Add image size to size picker */
+function genesass_add_image_size_to_media( $sizes ) {
+	$custom_sizes = array(
+		'new-image' => '60 Sidebar Featured',
+	);
+	return array_merge( $sizes, $custom_sizes );
+}
+add_filter( 'image_size_names_choose', 'genesass_add_image_size_to_media' );

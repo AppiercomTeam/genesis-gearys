@@ -3,11 +3,6 @@
 
 .sidebar {
 
-	@media only screen and (min-width: $width-lg) {
-		float: right;
-		width: 30%;
-	}
-
 	p {
 		margin-bottom: ($spacer * 2);
 	}
