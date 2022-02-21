@@ -9,6 +9,8 @@
 - SCSS
 -- footer in rifle green
 -- separated out colours and typography
+-- home page
+-- Smart Slider styles
 - CSS
 -- changed some editor styles to match frontend fonts
 - PHP

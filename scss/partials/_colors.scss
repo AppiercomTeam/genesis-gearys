@@ -261,7 +261,7 @@ a {
 
 	&:focus,
 	&:hover {
-		color: $secondary;
+		color: $forest-green;
 	}
 }
 
@@ -399,4 +399,11 @@ select,
 textarea {
 	background-color: $white;
 	color: $black-chocolate;
+}
+
+
+/* Slider
+ --------------------------------------------------------------------------- */
+div#n2-ss-3 .n2-style-52a27b9422f615fb2c24656151df03c2-heading {
+	background-color: $secondary !important;
 }
