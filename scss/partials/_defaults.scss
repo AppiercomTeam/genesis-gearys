@@ -54,7 +54,7 @@ a {
 }
 
 p {
-	margin: 0 0 ($spacer * 3);
+	margin: 0 0 ($spacer * 2);
 	padding: 0;
 }
 
@@ -301,3 +301,16 @@ th {
 	margin-bottom: ($spacer * 3);
 	position: relative;
 }
+
+.gb-block-post-grid-more-link {
+	color: $primary;
+	display: block;
+	text-align: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+@include make-margin-padding();

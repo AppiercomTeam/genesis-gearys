@@ -15,25 +15,25 @@ $genesis_sample_default_colors = array(
 
 $genesass_link_color = get_theme_mod(
 	'genesass_link_color',
-	$genesass_default_colors['link']
+	$genesis_sample_default_colors['link']
 );
 
 $genesass_accent_color = get_theme_mod(
 	'genesass_accent_color',
-	$genesass_default_colors['accent']
+	$genesis_sample_default_colors['accent']
 );
 
 $genesass_link_color_contrast   = genesass_color_contrast( $genesass_link_color );
 $genesass_link_color_brightness = genesass_color_brightness( $genesass_link_color, 35 );
 
 return array(
-	'fonts-url'            => 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap',
+	'fonts-url'            => 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap',
 	'content-width'        => 1200,
 	'button-bg'            => $genesass_link_color,
 	'button-color'         => $genesass_link_color_contrast,
 	'button-outline-hover' => $genesass_link_color_brightness,
 	'link-color'           => $genesass_link_color,
-	'default-colors'       => $genesass_default_colors,
+	'default-colors'       => $genesis_sample_default_colors,
 	'editor-color-palette' => array(
 		array(
 			'name'  => __( 'John Deere Green', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.

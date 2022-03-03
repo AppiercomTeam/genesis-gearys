@@ -29,7 +29,11 @@
 	padding: 0;
 
 	@media only screen and (min-width: $width-lg) {
-		max-width: 1200px;
+		max-width: 1000px;
+	}
+
+	@media only screen and (min-width: $width-xl) {
+		max-width: $max-width;
 	}
 }
 
@@ -46,8 +50,18 @@
 	}
 
 	.content {
-		flex-basis: 65%;
+		flex-basis: 100%;
 		order: 1;
+		padding: 0 ($spacer * 1.5);
+
+		@media only screen and (min-width: $width-sm) {
+			padding: 0 ($spacer * 3);
+		}
+
+		@media only screen and (min-width: $width-lg) {
+			flex-basis: 65%;
+			padding: 0 ($spacer * 1.5);
+		}
 
 		.full-width-content & {
 			flex-basis: 100%;
@@ -62,11 +76,18 @@
 		}
 	}
 
-	.sidebar {
+	.sidebar-primary {
+		margin-top: $spacer * 3;
 		order: 2;
+		padding: 0 ($spacer * 1.5);
+
+		@media only screen and (min-width: $width-sm) {
+			padding: 0 ($spacer * 3);
+		}
 
 		@media only screen and (min-width: $width-lg) {
-			flex-basis: 33%;
+			flex-basis: 35%;
+			padding: 0 ($spacer * 1.5);
 
 			.sidebar-content & {
 				order: 1;
@@ -92,4 +113,15 @@ article {
 .site-inner {
 	flex: 1;
 	width: 100%;
+}
+
+
+/* Site Header
+	--------------------------------------------- */
+@media only screen and (min-width: $width-lg) {
+	.admin-bar {
+		.site-header {
+			top: 32px;
+		}
+	}
 }

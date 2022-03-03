@@ -4,7 +4,7 @@
    Author: StudioPress, gillespieza
    Author URI: https: //gillespieza.github.io/online-cv/
 
-	Version: 0.0.5
+	Version: 0.0.6
 
 	Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -18,70 +18,137 @@
    Requires PHP: 5.6
 */
 
-/* Table of Contents
-- HTML5 Reset
-	- Baseline Normalize
-	- Box Sizing
-	- Float Clearing
-- Defaults
-	- Typographical Elements
-	- Headings
-	- Objects
-	- Gallery
-	- Forms
-	- Tables
-	- Screen Reader Text
-- Structure and Layout
-	- Site Container
-	- Site Inner
-- Common Classes
-	- Avatar
-	- Genesis
-	- Search Form
-   - Skip Links
-	- Titles
-	- WordPress
-- Widgets
-	- Featured Content
-- Plugins
-	- Genesis eNews Extended
-	- Genesis Simple FAQ
-- Site Header
-	- Title Area
-- Site Navigation
-	- Responsive Menu
-	- Header Menu
-	- Footer Menu
-- Content Area
-	- Entry Content
-	- Entry Meta
-	- Pagination
-	- Entry Comments
-- Sidebar
-- Footer Widgets
-- Site Footer
-- Media Queries
-	- Min-width: 960px
-		- Site Header
-		- Genesis Menu
-		- Responsive Menu
-		- Header Menu
-		- Site Inner
-		- Content
-		- Sidebar
-		- Author Box
-		- After Entry
-		- Column Classes
-		- Entry Misc.
-		- Footer Widgets
-- Print Styles
-*/
+// Table of Contents
+// - HTML5 Reset
+// 	- Baseline Normalize
+// 	- Box Sizing
+// 	- Float Clearing
+// - Defaults
+// 	- Typographical Elements
+// 	- Headings
+// 	- Objects
+// 	- Gallery
+// 	- Forms
+// 	- Tables
+// 	- Screen Reader Text
+// - Structure and Layout
+// 	- Site Container
+// 	- Site Inner
+// - Common Classes
+// 	- Avatar
+// 	- Genesis
+// 	- Search Form
+//    - Skip Links
+// 	- Titles
+// 	- WordPress
+// - Widgets
+// 	- Featured Content
+// - Plugins
+// 	- Genesis eNews Extended
+// 	- Genesis Simple FAQ
+// - Site Header
+// 	- Title Area
+// - Site Navigation
+// 	- Responsive Menu
+// 	- Header Menu
+// 	- Footer Menu
+// - Content Area
+// 	- Entry Content
+// 	- Entry Meta
+// 	- Pagination
+// 	- Entry Comments
+// - Sidebar
+// - Footer Widgets
+// - Site Footer
+// - Media Queries
+// 	- Min-width: 960px
+// 		- Site Header
+// 		- Genesis Menu
+// 		- Responsive Menu
+// 		- Header Menu
+// 		- Site Inner
+// 		- Content
+// 		- Sidebar
+// 		- Author Box
+// 		- After Entry
+// 		- Column Classes
+// 		- Entry Misc.
+// 		- Footer Widgets
+// - Print Styles
+
+:root {
+	--theme-primary: #367c2b;
+	--theme-secondary: #FDDA01;
+	--black-chocolate: #27251F;
+	--heading-font: 'Amatic SC',
+		'Tempus Sans ITC',
+		'Bradley Hand ITC',
+		cursive;
+	--heading-font-fallback: 'Tempus Sans ITC',
+		'Bradley Hand ITC',
+		cursive;
+}
 
 
+// @import "partials/fonts";
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/normalize";
 @import "partials/defaults";
+
+body:not(.wf-amatic-sc--loaded):not(.no-js) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		font-family: var(--heading-font-fallback);
+		font-weight: 700;
+		letter-spacing: -3px;
+		line-height: 1.8;
+	}
+
+	h1,
+	.h1,
+	.archive-title,
+	.author-box-title {
+		font-size: 30px; // 50px
+		line-height: 2.7;
+	}
+
+	.block-title {
+		h3 {
+			font-size: 27px;
+			line-height: 3;
+		}
+	}
+
+	.gb-block-post-grid header .gb-block-post-grid-title {
+		font-size: 17px;
+		letter-spacing: -1.8px;
+		line-height: 2.6;
+	}
+
+	body.woocommerce ul.products[class*=columns-] li.product .woocommerce-loop-product__title,
+	body.woocommerce-page ul.products[class*=columns-] li.product .woocommerce-loop-product__title,
+	.gb-block-layout-column ul.products[class*=columns-] li.product .woocommerce-loop-product__title,
+	.sidebar-primary .widget-title {
+		font-size: 19px; // 32px
+		line-height: 2.7;
+	}
+
+}
+
+
+
 @import "partials/structure";
 @import "partials/common-classes";
 @import "partials/widgets";
@@ -98,12 +165,7 @@
 @import "partials/boilerplate";
 @import "partials/gravityforms";
 @import "partials/custom";
+@import "partials/blog";
 @import "partials/woocommerce";
+// @import "partials/animations";
 // @import "partials/404";
-
-:root {
-	--theme-primary: #367c2b;
-	--theme-secondary: #FDDA01;
-	--black-chocolate: #27251F;
-	--heading-font: 'Amatic SC', cursive;
-}

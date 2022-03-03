@@ -27,17 +27,6 @@ body {
 }
 
 
-/* Overflow-X glitch
--------------------------------------------------- */
-.full-width-content {
-	.site-inner {
-		.entry-content {
-			>.alignfull {
-				// max-width: 99vw !important;
-			}
-		}
-	}
-}
 
 
 .wp-block-genesis-blocks-gb-container {
@@ -48,19 +37,48 @@ body {
 	}
 }
 
-.site-inner {
 
-	.content {
-		@media only screen and (min-width: $width-lg) {
-			width: 100%;
+/* Animation
+-------------------------------------------------- */
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
 
-			.blog &,
-			.single-post & {
-
-				width: 65%;
-			}
-		}
+	&.infinite {
+		animation-iteration-count: infinite;
 	}
+
+	&.hinge {
+		animation-duration: 2s;
+	}
+
+	&.bounceIn,
+	&.bounceOut {
+		animation-duration: .75s;
+	}
+
+	&.flipOutX,
+	&.flipOutY {
+		animation-duration: .75s;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		visibility: visible;
+	}
+}
+
+.fadeInUp {
+	animation-name: fadeInUp;
+	visibility: hidden;
 }
 
 
@@ -95,6 +113,48 @@ body {
 	}
 }
 
+.flex-break-lg {
+	&.gb-layout-columns-2 {
+		>.gb-layout-column-wrap {
+			@media only screen and (min-width: $width-md) {
+				grid-template-areas:
+					"col1"
+					"col2";
+				grid-template-columns: 1fr;
+			}
+
+			@media only screen and (min-width: $width-lg) {
+				grid-template-areas: "col1 col2";
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 0 4em;
+			}
+
+			.gb-block-layout-column:nth-child(1) {
+				grid-area: col1;
+
+				&.flex-order-xs-2 {
+					grid-area: col2;
+
+					@media only screen and (min-width: $width-lg) {
+						grid-area: col1;
+					}
+				}
+			}
+
+			.gb-block-layout-column:nth-child(2) {
+				grid-area: col2;
+
+				&.flex-order-xs-1 {
+					grid-area: col1;
+
+					@media only screen and (min-width: $width-lg) {
+						grid-area: col2;
+					}
+				}
+			}
+		}
+	}
+}
 
 /* MISC
  ------------------------------------- */
@@ -127,6 +187,11 @@ body {
 		.gb-block-post-grid .is-grid,
 		.gb-block-post-grid .gb-is-grid {
 			justify-content: space-between;
+			row-gap: $spacer;
+
+			article {
+				margin-bottom: 0;
+			}
 		}
 
 		.gb-post-grid-item {
@@ -136,7 +201,7 @@ body {
 			justify-content: flex-start;
 
 			@media only screen and (min-width: $width-md) {
-				justify-content: space-between;
+				// justify-content: space-between;
 			}
 
 			.gb-block-post-grid-image {
@@ -177,16 +242,17 @@ body {
 }
 
 
+
 /* Section overlays
  ------------------------------------- */
 .torn--top {
 	&:before {
-		background-image: url(images/header-bg.png);
+		background-image: url(images/torn-paper-top.svg);
 		background-position: center top;
 		background-repeat: repeat-x;
 		content: "";
 		display: block;
-		height: 16px;
+		height: 25px;
 		left: 0;
 		pointer-events: none;
 		position: absolute;
@@ -199,13 +265,13 @@ body {
 
 .torn--bottom {
 	&:after {
-		background-image: url(images/header-bg-bottom.png);
+		background-image: url(images/torn-paper-bottom.svg);
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		bottom: 0;
 		content: "";
 		display: block;
-		height: 16px;
+		height: 25px;
 		left: 0;
 		pointer-events: none;
 		position: absolute;
@@ -213,24 +279,98 @@ body {
 		width: 100%;
 		z-index: 2;
 	}
+
+	&.torn--subtle {
+		&:after {
+			background-image: url(images/header-bg-bottom.png);
+			height: 16px;
+			width: 100%;
+		}
+	}
+}
+
+.torn--top-2 {
+	&:before {}
 }
 
 
 /* Service CTAs
  ------------------------------------- */
+// this is a column
+.row-gap-40 {
+	.gb-block-layout-column-gap-2 {
+		grid-gap: 2em 2em;
+	}
+}
+
 .card--service {
 	height: 100%;
 	margin-bottom: ($spacer * 4);
-	transition: box-shadow 300ms ease 0ms;
+	transition: all 500ms ease 0ms;
+	z-index: 1;
 
 	&:hover {
-		box-shadow: 0px 4px 12px 0px rgba(253, 218, 1, 0.2);
+		box-shadow: 0px 5px 12px 0px rgba(253, 218, 1, 0.4);
+
+		.gb-block-layout-column-inner {
+
+			&:after {
+				color: choose-contrast-color($secondary);
+				height: 50px;
+				left: 50px;
+				line-height: 50px;
+				opacity: 1;
+				top: 55%;
+				width: 50px;
+				z-index: 2;
+			}
+
+			figure {
+				background-color: $primary;
+
+				img {
+					opacity: 0.5;
+				}
+			}
+		}
+
+
 	}
 
 	.gb-block-layout-column-inner {
+		border-radius: 5px;
+		display: flex;
+		flex-flow: column nowrap;
+		height: 100%;
+		justify-content: space-between;
+		position: relative;
+
+		&:after {
+			background-color: $secondary;
+			border-radius: 50%;
+			color: $secondary;
+			content: '\f30b';
+			font-family: $font-family-icons;
+			font-size: 20px;
+			height: 0;
+			left: -50px;
+			line-height: 50px;
+			opacity: 0;
+			position: absolute;
+			text-align: center;
+			top: 55%;
+			transition: all 500ms ease, color 1s ease;
+			transition: color 1s ease;
+			width: 0;
+			z-index: 0;
+		}
 
 		figure {
 			margin-bottom: 0;
+			position: relative;
+			opacity: 1;
+			transform: scale(1);
+			transition: transform 500ms ease, opacity 500ms ease;
 			// margin-left: calc(-100vw / 2 + 100% / 2);
 			// margin-right: calc(-100vw / 2 + 100% / 2);
 		}
@@ -238,6 +378,7 @@ body {
 		h3 {
 			margin-top: 0;
 			padding: ($spacer * 4) ($spacer * 4) 0 ($spacer * 4);
+			transition: all 500ms ease;
 
 			@media only screen and (min-width: $width-md) {
 				padding: ($spacer * 2) ($spacer * 2) 0 ($spacer * 2);
@@ -275,4 +416,98 @@ body {
 		}
 	}
 
+}
+
+
+/* RIBBONS FROM https://codepen.io/nxworld/pen/oLdoWb */
+// common ribbon styles.
+.ribbon {
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	width: 150px;
+
+	&:before,
+	&:after {
+		border: 5px solid darken($secondary, 5%);
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -1;
+	}
+
+	span {
+		background-color: $secondary;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+		color: choose-contrast-color($secondary);
+		display: block;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1;
+		padding: 15px 0;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		width: 225px;
+	}
+}
+
+.ribbon {
+
+	/* top left*/
+	&.ribbon-top-left {
+		top: -10px;
+		left: -10px;
+
+		&:before,
+		&:after {
+			border-top-color: transparent;
+			border-left-color: transparent;
+		}
+
+		&:before {
+			top: 0;
+			right: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			left: 0;
+		}
+
+		span {
+			right: -25px;
+			top: 30px;
+			transform: rotate(-45deg);
+		}
+
+	}
+
+	/* top right*/
+	&.ribbon-top-right {
+		top: -10px;
+		right: -10px;
+
+		&:before,
+		&:after {
+			border-top-color: transparent;
+			border-right-color: transparent;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		span {
+			left: -25px;
+			top: 30px;
+			transform: rotate(45deg);
+		}
+	}
 }

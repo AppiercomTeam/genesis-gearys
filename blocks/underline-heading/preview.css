@@ -4,6 +4,9 @@
 	margin-bottom: 40px;
 }
 
+.block-title {
+	text-align: center;
+}
 .block-title.text-left {
 	text-align: left;
 }

@@ -1,5 +1,12 @@
 /* Sidebar
 ---------------------------------------------------------------------------- */
+.sidebar-primary {
+	padding-top: 30px; // matches entry-title margin-top;
+
+	.widget-title {
+		font-size: 2rem;
+	}
+}
 
 .sidebar {
 

@@ -53,12 +53,10 @@ strong {
 /* Menu
 --------------------------------------------- */
 .genesis-nav-menu {
-	line-height: $line-height-xs;
 
 	a {
 		font-size: $font-size-base;
 		font-weight: 400;
-		text-shadow: 0 1px 1px $gray-200;
 	}
 
 	.sub-menu {
@@ -74,7 +72,7 @@ strong {
 
 			@media only screen and (min-width: $width-lg) {
 				font-weight: 400;
-				text-shadow: 0 1px 1px $lemon;
+				text-shadow: 0 1px 1px $gray-200;
 			}
 		}
 	}
@@ -114,25 +112,32 @@ h6,
 	font-family: $font-family-heading;
 	font-weight: 700;
 	line-height: $line-height-sm;
-	margin: ($spacer * 2) 0 0 0;
+	margin: 1em 0 0 0;
 	text-transform: uppercase;
+
+	small {
+		font-weight: 400;
+	}
 }
 
 // title for page, single, archive, search, the 404
 h1,
 .h1 {
 	font-size: $h1-font-size;
+	margin-top: 0;
 }
 
 // skip links, main navigation, sidebars (and in the content)
 h2,
 .h2 {
 	font-size: $h2-font-size;
+	margin-top: 0;
 }
 
 h3,
 .h3 {
 	font-size: $h3-font-size;
+	margin-top: 0;
 }
 
 h4,
@@ -150,36 +155,6 @@ h6,
 	font-size: $h6-font-size;
 }
 
-
-
-// widget-titles (and in the content)
-h3 {
-	font-size: 2rem;
-}
-
-// only used in the content
-h4 {
-	font-size: 1.6rem;
-}
-
-.entry-content h3,
-.entry-content h4 {
-	font-weight: 600;
-}
-
-.entry-content h4 {
-	margin-top: ($spacer * 4);
-}
-
-// only used in the content
-h5 {
-	font-size: 1.4rem;
-}
-
-// only used in the content
-h6 {
-	font-size: 1.2rem;
-}
 
 /* Breadcrumbs
 --------------------------------------------- */
@@ -228,16 +203,24 @@ figcaption,
 	line-height: $line-height-xs;
 }
 
-.archive-description .entry-title,
 .archive-title,
 .author-box-title {
-	font-size: $font-size-xxl;
-	font-weight: 600;
+	font-size: $h1-font-size;
+	font-weight: 700;
 	margin-bottom: $spacer;
+}
+
+.gb-block-post-grid {
+	header {
+		.gb-block-post-grid-title {
+			font-size: 1.75rem;
+		}
+	}
 }
 
 .entry-title {
 	font-size: $h1-font-size;
+	margin-top: $spacer * 3;
 	margin-bottom: $spacer;
 
 	a {
@@ -311,7 +294,7 @@ body {
 
 		.gb-button-size-extralarge {
 			font-size: $font-size-xxl;
-			font-weight: 900;
+			font-weight: 700;
 			padding: 1.5em;
 		}
 	}

@@ -21,7 +21,8 @@ if ( ! function_exists( 'print_r_hidden' ) ) {
 	 * @param mixed $argument Whatever you want printed out.
 	 */
 	function print_r_hidden( $argument ) {
-		echo '<!-- FOOBAR GREP ';
+		echo "
+		<!-- FOOBAR GREP ";
 		print_r( $argument ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_print_r.
 		echo ' -->';
 	}

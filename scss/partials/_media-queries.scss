@@ -3,110 +3,67 @@
 
 @media only screen and (min-width: $width-lg) {
 
-	/* Site Header
-	--------------------------------------------- */
-	.admin-bar {
-		.site-header {
-			top: 32px;
-		}
-	}
-
-	/* Genesis Menu
-	--------------------------------------------- */
-
-	.genesis-nav-menu {
-
-		>.menu-bold {
-			>a {
-				font-weight: 700;
-			}
-		}
-
-		>.menu-highlight {
-			>a {
-				background-color: $gray-800;
-				border-radius: 3px;
-				color: choose-contrast-color($gray-800);
-				font-weight: 600;
-				margin-left: ($spacer * 1.5);
-				padding-left: ($spacer * 2);
-				padding-right: ($spacer * 2);
-
-				&:focus,
-				&:hover {
-					background-color: $primary;
-				}
-			}
-		}
-	}
-
-	/* Content
-	--------------------------------------------- */
-
-
 	/* Column Classes
 	--------------------------------------------- */
 
-	.five-sixths,
-	.four-sixths,
-	.one-fourth,
-	.one-half,
-	.one-sixth,
-	.one-third,
-	.three-fourths,
-	.three-sixths,
-	.two-fourths,
-	.two-sixths,
-	.two-thirds {
-		float: left;
-		margin-left: 2.564102564102564%;
-	}
+	// .five-sixths,
+	// .four-sixths,
+	// .one-fourth,
+	// .one-half,
+	// .one-sixth,
+	// .one-third,
+	// .three-fourths,
+	// .three-sixths,
+	// .two-fourths,
+	// .two-sixths,
+	// .two-thirds {
+	// 	float: left;
+	// 	margin-left: 2.564102564102564%;
+	// }
 
-	.one-half,
-	.three-sixths,
-	.two-fourths {
-		width: 48.717948717948715%;
-	}
+	// .one-half,
+	// .three-sixths,
+	// .two-fourths {
+	// 	width: 48.717948717948715%;
+	// }
 
-	.one-third,
-	.two-sixths {
-		width: 31.623931623931625%;
-	}
+	// .one-third,
+	// .two-sixths {
+	// 	width: 31.623931623931625%;
+	// }
 
-	.four-sixths,
-	.two-thirds {
-		width: 65.81196581196582%;
-	}
+	// .four-sixths,
+	// .two-thirds {
+	// 	width: 65.81196581196582%;
+	// }
 
-	.one-fourth {
-		width: 23.076923076923077%;
-	}
+	// .one-fourth {
+	// 	width: 23.076923076923077%;
+	// }
 
-	.three-fourths {
-		width: 74.35897435897436%;
-	}
+	// .three-fourths {
+	// 	width: 74.35897435897436%;
+	// }
 
-	.one-sixth {
-		width: 14.52991452991453%;
-	}
+	// .one-sixth {
+	// 	width: 14.52991452991453%;
+	// }
 
-	.five-sixths {
-		width: 82.90598290598291%;
-	}
+	// .five-sixths {
+	// 	width: 82.90598290598291%;
+	// }
 
-	.first {
-		clear: both;
-		margin-left: 0;
-	}
+	// .first {
+	// 	clear: both;
+	// 	margin-left: 0;
+	// }
 
 	/* Entry Misc.
 	--------------------------------------------- */
 
 	.after-entry,
-	.archive-description,
 	.author-box,
 	.comment-respond,
-	.entry,
 	.entry-comments,
 	.entry-pings {
 		margin-bottom: ($spacer * 6);

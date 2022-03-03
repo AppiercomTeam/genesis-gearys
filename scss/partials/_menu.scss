@@ -3,6 +3,7 @@
 
 .genesis-nav-menu {
 	clear: both;
+	line-height: $line-height-xs;
 	width: 100%;
 
 	.menu-item {
@@ -133,6 +134,36 @@
 			}
 		}
 	}
+
+	>.menu-bold {
+		>a {
+			font-weight: 700;
+		}
+	}
+
+	>.menu-highlight {
+		>a {
+			background-color: $secondary;
+			border-radius: 7px;
+			color: choose-contrast-color($secondary);
+			font-weight: 600;
+			margin-left: ($spacer * 1.5);
+			padding-left: ($spacer * 2);
+			padding-right: ($spacer * 2);
+
+			&:focus,
+			&:hover {
+				background-color: $primary;
+				color: choose-contrast-color($primary);
+			}
+
+			@media only screen and (min-width: $width-lg) {
+				background-color: $lemon;
+				color: choose-contrast-color($lemon);
+			}
+
+		}
+	}
 }
 
 
@@ -188,10 +219,7 @@
 .menu-toggle {
 	border-width: 0;
 	display: block;
-	margin-bottom: $spacer;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: $spacer;
+	margin: 0 auto;
 	overflow: hidden;
 	padding: ($spacer * 1.5);
 	position: relative;
@@ -267,12 +295,15 @@
 --------------------------------------------- */
 
 .nav-primary {
+	background-color: $light-gray;
 	clear: left;
+	color: $black-chocolate;
 	padding: 0;
 	width: 100%;
 
 	@media only screen and (min-width: $width-lg) {
-		background-image: url(images/header-bg.png);
+		background-color: $primary;
+		background-image: url(images/torn-paper-top.svg);
 		background-position: center top;
 		background-repeat: repeat-x;
 		clear: both;
@@ -286,7 +317,7 @@
 		padding-bottom: $spacer * 5;
 		padding-left: $spacer * 5;
 		padding-right: $spacer * 5;
-		padding-top: 0;
+		padding-top: $spacer * 5;
 
 		@media only screen and (min-width: $width-lg) {
 			align-content: center;
@@ -294,14 +325,34 @@
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: center;
-			max-width: 1200px;
+			margin: auto;
+			max-width: $max-width;
 			padding: ($spacer * 1.5) 0;
 		}
 
 		a {
+			color: $lemon;
+			text-shadow: 0 1px 1px $gray-500; // letterpress effect.
+
 			@media only screen and (min-width: $width-lg) {
 				padding-left: ($spacer * 1.5);
 				padding-right: ($spacer * 1.5);
+				text-shadow: none;
+			}
+
+			&:focus,
+			&:hover {
+				color: $secondary;
+
+				@media only screen and (min-width: $width-lg) {
+					color: $black-chocolate;
+				}
+			}
+		}
+
+		.current-menu-item {
+			>a {
+				color: $black;
 			}
 		}
 	}

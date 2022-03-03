@@ -18,7 +18,7 @@ main {
 }
 
 h1 {
-	font-size: 2em;
+	// font-size: 2em;
 	margin: .67em 0
 }
 
@@ -213,8 +213,8 @@ html {
 .site-inner::before,
 .widget::before,
 .wrap::before {
-	content: " ";
-	display: table;
+	// content: "";
+	// display: table;
 }
 
 .author-box::after,
@@ -231,7 +231,7 @@ html {
 .site-inner::after,
 .widget::after,
 .wrap::after {
-	clear: both;
-	content: " ";
-	display: table;
+	// clear: both;
+	// content: " ";
+	// display: table;
 }

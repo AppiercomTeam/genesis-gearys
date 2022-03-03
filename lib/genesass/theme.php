@@ -40,8 +40,8 @@ if ( ! function_exists( 'genesass_mute_jquery_migrator' ) ) {
 		echo '<script>jQuery.migrateMute = true;</script>';
 	}
 }
-add_action( 'wp_head', 'genesass_mute_jquery_migrator' );
-add_action( 'admin_head', 'genesass_mute_jquery_migrator' );
+add_action( 'wp_footer', 'genesass_mute_jquery_migrator' );
+add_action( 'admin_footer', 'genesass_mute_jquery_migrator' );
 
 
 /*
@@ -58,11 +58,23 @@ function genesass_gutenberg_editor_css() {
 add_action( 'enqueue_block_editor_assets', 'genesass_gutenberg_editor_css' );
 
 
-/** Add image size to size picker */
-function genesass_add_image_size_to_media( $sizes ) {
-	$custom_sizes = array(
-		'new-image' => '60 Sidebar Featured',
-	);
-	return array_merge( $sizes, $custom_sizes );
+
+/** Remove the "posts header" from the blog page */
+remove_action( 'genesis_before_loop', 'genesis_do_posts_page_heading' );
+
+
+/**
+ * Add Prev/Next link to single post
+ *
+ * @return void
+ */
+function genesass_prev_next_post_nav() {
+
+	if ( is_singular( 'post' ) ) {
+		genesis_prev_next_post_nav();
+	}
 }
-add_filter( 'image_size_names_choose', 'genesass_add_image_size_to_media' );
+add_action( 'genesis_before_while', 'genesass_prev_next_post_nav' );
+
+
+

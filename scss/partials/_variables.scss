@@ -43,14 +43,14 @@ $gold: #FDD835; // material-design Yellow 600
 
 // Theme Colours
 // ---------------------------------------------------------------------------
-$primary: #367c2b; // John Deer Green (sap green).
+$primary: #367c2b; //  367c2b rgb(54, 124, 43) John Deer Green (sap green).
 $secondary: #FDDA01; // John Deere yellow (Sizzling Sunrise).
 $black-chocolate: #27251F;
 $forest-green: #22491D;
 $morning-blue: #909992;
 $rifle-green: #484E41;
 $olive-green: #A59B55;
-$light-gray: #CFD3D0; // a tint of morning blue
+$light-gray: #8b918c; // a tint of morning blue
 $wheat: #f5f0e9; // isabelline
 $lemon: #FFF8C9; // tint of secondary
 
@@ -83,7 +83,6 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
-
 $font-family-monospace: SFMono-Regular,
 Menlo,
 Monaco,
@@ -91,23 +90,13 @@ Consolas,
 "Liberation Mono",
 "Courier New",
 monospace !default;
-
 $font-family-base: $font-family-sans-serif !default;
-
 $font-family-heading: 'Amatic SC',
-'Raleway',
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
+'Tempus Sans ITC',
+'Bradley Hand ITC',
+cursive;
+$font-family-icons: 'FontAwesome',
+dashicons;
 
 // Font Sizes
 // ---------------------------------------------------------------------------
@@ -119,12 +108,12 @@ $font-size-xxl: $font-size-base * 2; // 32px
 
 // Headings
 // ---------------------------------------------------------------------------
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default; // skip links, main navigation, sidebars (and in the content)
-$h3-font-size: $font-size-base * 1.75 !default; // widget-titles (and in the content)
-$h4-font-size: $font-size-base * 1.5 !default; // only in the content
-$h5-font-size: $font-size-base * 1.25 !default; // only in the content
-$h6-font-size: $font-size-base !default; // only in the content
+$h1-font-size: $font-size-base * 3.1 !default;
+$h2-font-size: $font-size-base * 2.8 !default; // skip links, main navigation, sidebars (and in the content)
+$h3-font-size: $font-size-base * 2.25 !default; // widget-titles (and in the content)
+$h4-font-size: $font-size-base * 1.95 !default; // only in the content
+$h5-font-size: $font-size-base * 1.65 !default; // only in the content
+$h6-font-size: $font-size-base * 1.4 !default; // only in the content
 
 // Line heights
 // ---------------------------------------------------------------------------
@@ -144,10 +133,12 @@ $width-md: 768px;
 $width-lg: 992px;
 $width-xl: 1200px;
 
+$max-width: $width-xl;
+
 // Border styles
 $border-width: 1px;
 $border-style: solid;
-$border-color: $gray-200;
+$border-color: $gray-300;
 
 // Box Shadow
 $box-shadow-blur-radius: 20px;

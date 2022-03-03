@@ -35,6 +35,7 @@ add_filter( 'upload_mimes', 'genesass_mime_types' );
  * If unable to, the file name extension will be used to determine type.
  */
 function genesass_verify_filetype( $data, $file, $filename, $mimes ) {
+
 	$filetype = wp_check_filetype( $filename, $mimes );
 
 	return array(

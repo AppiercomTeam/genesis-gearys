@@ -33,6 +33,21 @@
 	}
 }
 
+.sidebar-primary {
+	.widget {
+		background-color: $lemon;
+		border-radius: 5px;
+		color: $black-chocolate;
+		padding: 50px;
+
+		a {
+			color: $forest-green;
+		}
+
+	}
+}
+
+
 /* Calendar
 --------------------------------------------- */
 .widget_calendar {
@@ -60,5 +75,77 @@
 	.entry-title {
 		margin-bottom: ($spacer * 0.5);
 		margin-top: ($spacer);
+	}
+}
+
+
+/* WooCommerce Recent Products
+--------------------------------------------- */
+.sidebar-primary {
+	.woocommerce {
+		.products {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+
+			&.columns-2 {
+				li.product {
+					flex-basis: 45%;
+				}
+			}
+
+			&.columns-3 {
+				li.product {
+					flex-basis: 30%;
+					margin: 0;
+				}
+			}
+
+			li.product {
+
+				a {
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+
+				.woocommerce-loop-product__title {
+					font-size: $font-size-base * 1.4;
+					font-weight: 700;
+					line-height: 1;
+				}
+
+				.woocommerce-LoopProduct-link {
+					display: block;
+				}
+
+				.price {
+					font-weight: 600;
+
+					.incl {
+						font-size: $font-size-sm;
+						font-weight: 400;
+					}
+				}
+
+				.add_to_cart_button {
+					// display: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+// ELASTICPRESS
+.widget_ep-facet {
+	font-weight: 700;
+
+	.empty-term {
+		font-weight: 400;
 	}
 }

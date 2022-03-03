@@ -117,66 +117,9 @@ body {
 	color: $black-chocolate;
 }
 
-/* Header
- --------------------------------------------------------------------------- */
-.site-header {
-	background-color: $white;
-}
-
-.site-title {
-	a {
-		color: $black-chocolate;
-
-		&:focus,
-		&:hover {
-			color: $primary;
-		}
-	}
-}
 
 /* Main Menu
  --------------------------------------------------------------------------- */
-.nav-primary {
-	background-color: $light-gray;
-	color: $black-chocolate;
-
-	@media only screen and (min-width: $width-lg) {
-		background-color: $wheat;
-	}
-}
-
-.genesis-nav-menu {
-	a {
-		color: $black-chocolate;
-
-		&:focus,
-		&:hover {
-			color: $black-chocolate;
-		}
-	}
-
-	.current-menu-item {
-		>a {
-			color: $black;
-		}
-	}
-
-	.sub-menu {
-		a {
-			background-color: transparent;
-		}
-
-		.current-menu-item {
-			>a {
-
-				&:focus,
-				&:hover {
-					color: $black-chocolate;
-				}
-			}
-		}
-	}
-}
 
 .menu-toggle {
 	background-color: transparent;
@@ -204,21 +147,21 @@ body {
 /* Footer
  --------------------------------------------------------------------------- */
 .footer-widgets {
-	background-color: $secondary;
+
 
 	.wrap {
 		.footer-widget-area {
-			color: $black;
+			color: $lemon;
 
 			.widget-title {
-				color: $forest-green;
+				color: $secondary;
 			}
 
 			a {
-				color: $black-chocolate;
+				color: $white;
 
 				&:hover {
-					color: $black;
+					color: $lemon;
 				}
 			}
 		}
@@ -315,9 +258,16 @@ hr {
 	color: $gray-300;
 }
 
-mark {
+mark,
+mark.ep-highlight {
 	background-color: $primary;
 	color: choose-contrast-color($primary);
+
+	// elasticpress
+	.autosuggest-list & {
+		background-color: transparent;
+		color: $primary;
+	}
 }
 
 .required {
@@ -346,8 +296,8 @@ mark {
 
 		&.active {
 			a {
-				background-color: $gray-800;
-				color: $gray-100;
+				background-color: $primary;
+				color: choose-contrast-color($primary);
 			}
 		}
 	}
@@ -392,7 +342,74 @@ input[type="submit"],
 			color: $gray-800;
 		}
 	}
+
+	&.btn-primary {
+		background-color: $primary;
+		color: choose-contrast-color($primary);
+
+		&:focus,
+		&:hover {
+			background-color: $secondary;
+			color: choose-contrast-color($secondary);
+		}
+
+		&:active {
+			background-color: $forest-green;
+			color: choose-contrast-color($forest-green);
+		}
+	}
+
+	&.btn-secondary {
+		background-color: $secondary;
+		color: choose-contrast-color($secondary);
+
+		&:focus,
+		&:hover {
+			background-color: $primary;
+			color: choose-contrast-color($primary);
+		}
+
+		&:active {
+			background-color: $morning-blue;
+			color: choose-contrast-color($morning-blue);
+		}
+	}
+
+	&.btn-black-chocolate {
+		background-color: $black-chocolate;
+		color: choose-contrast-color($black-chocolate);
+
+		&:focus,
+		&:hover {
+			background-color: $morning-blue;
+			color: choose-contrast-color($morning-blue);
+		}
+
+		&:active {
+			background-color: $olive-green;
+			color: choose-contrast-color($olive-green);
+		}
+	}
+
+	&.btn-lemon {
+		background-color: $lemon;
+		color: choose-contrast-color($lemon);
+
+		&:focus,
+		&:hover {
+			background-color: $primary;
+			color: choose-contrast-color($primary);
+		}
+
+		&:active {
+			background-color: $forest-green;
+			color: choose-contrast-color($forest-green);
+		}
+	}
 }
+
+
+
 
 input,
 select,

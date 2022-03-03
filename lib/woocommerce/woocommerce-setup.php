@@ -124,7 +124,8 @@ function genesass_update_woocommerce_image_dimensions() {
 
 	// Updates image size options.
 	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
-	update_option( 'woocommerce_thumbnail_image_width', 500 ); // Catalog image.
+	update_option( 'woocommerce_thumbnail_image_width', 600 ); // Catalog image.
+	// update_option( 'woocommerce_thumbnail_image_height', 600 ); // Catalog image.
 
 	// Updates image cropping option.
 	update_option( 'woocommerce_thumbnail_cropping', '1:1' );
@@ -143,8 +144,8 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesass_gallery_im
 function genesass_gallery_image_thumbnail( $size ) {
 
 	$size = [
-		'width'  => 180,
-		'height' => 180,
+		'width'  => 200,
+		'height' => 200,
 		'crop'   => 1,
 	];
 

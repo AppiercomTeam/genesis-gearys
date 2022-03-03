@@ -176,6 +176,8 @@ function genesass_lightning_fast_google_fonts() {
 	echo "
 	<!-- 0. Lightning fast Google Fonts: https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
 	<!-- 1. Preemptively warm up the fonts' origin. -->
+	<!-- https://fonts.gstatic.com is the font file origin -->
+	<!-- It may not have the same origin as the CSS file (https://fonts.googleapis.com) -->
 	<link rel='preconnect' href='//fonts.gstatic.com/' crossorigin>
 	<link rel='preconnect' href='//fonts.googleapis.com/' crossorigin>
 
@@ -183,13 +185,14 @@ function genesass_lightning_fast_google_fonts() {
 	<!-- Works in most modern browsers. -->
 	<link rel='preload'
 		as='style'
-		href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap' />
+		href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap' />
 
 	<!-- 3. Initiate a low-priority, asynchronous fetch that gets applied to
-			the page - only after it’s arrived. Works in all browsers with
+			the page - only after it has arrived. Works in all browsers with
 			JavaScript enabled. -->
+	<!-- Browsers give print stylesheets a low priority and exclude them as a part of the critical render path -->
 	<link rel='stylesheet'
-			href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap'
+			href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap'
 			media='print' onload='this.media=&#34;all&#34;' />
 
 	<!-- 4. In the unlikely event that a visitor has intentionally disabled
@@ -198,9 +201,82 @@ function genesass_lightning_fast_google_fonts() {
 			preconnect which makes it marginally faster than the default. -->
 	<noscript>
 		<link rel='stylesheet'
-			href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap' />
+			href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap' />
 	</noscript>
 
 	";
 }
 add_action( 'genesis_meta', 'genesass_lightning_fast_google_fonts' );
+
+
+
+
+/**
+ * Add additional classes to the body element.
+ *
+ * @since 3.4.1
+ *
+ * @param array $classes Classes array.
+ * @return array $classes Updated class array.
+ */
+function genesass_body_classes( $classes ) {
+	// Add 'no-js' class to the body class values.
+	$classes[] = 'no-js';
+	return $classes;
+}
+add_filter( 'body_class', 'genesass_body_classes' );
+
+
+/**
+ * Echo out the script that changes 'no-js' class to 'js'.
+ *
+ * @since 1.0.0
+ */
+/**
+ * Echo the script that changes 'no-js' class to 'js'.
+ *
+ * @since 3.4.1
+ */
+function genesass_js_nojs_script() {
+
+	if ( genesis_is_amp() ) {
+		return;
+	}
+
+	?>
+	<script>
+	//<![CDATA[
+	(function(){
+		var c = document.body.classList;
+		c.remove( 'no-js' );
+		c.add( 'js' );
+	})();
+	//]]>
+	</script>
+	<?php
+}
+add_action( 'genesis_before', 'genesass_js_nojs_script', 1 );
+
+
+function genesass_enqueue_scripts() {
+	wp_register_script(
+		'gearys_performance',
+		get_stylesheet_directory_uri() .'/lib/genesass/performance.js',
+		array ( 'jquery' ),
+		false,
+		false,
+	);
+	wp_enqueue_script( 'gearys_performance' );
+}
+add_action( 'wp_enqueue_scripts', 'genesass_enqueue_scripts' );
+
+
+
+
+function genesass_insert_element_for_font_check() {
+	echo "
+	<!-- Let's visibly hide this element and make screen readers ignore it. We need this element to check if the font is loaded. -->
+      <div aria-visibility='hidden' class='hidden screen-reader-text' style='font-family: \"Amatic SC\"'>&nbsp;</div>
+		";
+}
+add_action( 'genesis_before', 'genesass_insert_element_for_font_check' );

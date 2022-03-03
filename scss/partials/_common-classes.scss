@@ -23,18 +23,34 @@
 
 }
 
-
-/* Genesis
+/* Genesis Post Grid Block
 --------------------------------------------- */
+.gb-block-post-grid {
+	.gb-block-post-grid-byline {
+		color: $primary;
+		text-transform: uppercase;
+	}
 
-.archive-description {
-	margin-bottom: ($spacer * 4);
+	a.gb-block-post-grid-more-link {
+		color: $primary;
+		display: block;
+		font-weight: 600;
+		font-size: $font-size-base;
+		margin: auto;
+		text-align: center;
 
-	@media only screen and (min-width: $width-lg) {
-		padding: ($spacer * 3);
+		&:before {
+			content: "\f138 ";
+			color: $primary;
+			font-family: $font-family-icons;
+			padding-right: $spacer * 0.5;
+		}
 	}
 }
 
+
+/* Genesis
+--------------------------------------------- */
 .after-entry {
 	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
 	margin-bottom: ($spacer * 4);
@@ -51,7 +67,6 @@
 	}
 }
 
-
 .breadcrumb {
 	border-bottom: $border-width $border-style $border-color;
 	margin-bottom: ($spacer * 4);
@@ -62,8 +77,6 @@
 	}
 }
 
-
-.archive-description p:last-child,
 .author-box p:last-child {
 	margin-bottom: 0;
 }
